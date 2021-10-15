@@ -1,4 +1,4 @@
 theme: jekyll-theme-midnight
 title: [--]
 description: [X]
-show_downloads: [false]
+show_downloads: ["false"]
