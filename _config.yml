@@ -30,9 +30,11 @@ twitter_username: haradatakahiro
 github_username:  takahiroharada
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: jekyll/minima@3cdd14d
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
+  - jekyll-remote-theme
 minima:
   skin: dark
   social_links:
