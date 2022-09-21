@@ -7,7 +7,7 @@ layout: home
 
 ## Papers
 
-- Shin Fujieda, Progressive Material Caching, to appear (2022)
+- Shin Fujieda, Takahiro Harada, Progressive Material Caching, to appear (2022)
 - Pieterjan Bartels, Takahiro Harada, Combining GPU Tracing Methods within a Single Ray Query, to appear (2022)
 - Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, Fused BVH to Ray Trace Level of Detail Meshes, to appear (2022)
 - Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada, GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination, to appear (2022)
