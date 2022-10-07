@@ -7,9 +7,10 @@ layout: home
 
 ## Papers
 
-- Shin Fujieda, Takahiro Harada, Progressive Material Caching, to appear (2022)
-- Pieterjan Bartels, Takahiro Harada, Combining GPU Tracing Methods within a Single Ray Query, to appear (2022)
-- Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, Fused BVH to Ray Trace Level of Detail Meshes, to appear (2022)
+- Shin Fujieda, Takahiro Harada, Progressive Material Caching, to appear (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf)]
+- Pieterjan Bartels, Takahiro Harada, Combining GPU Tracing Methods within a Single Ray Query, to appear (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf)]
+- Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, Fused BVH to Ray Trace Level of Detail Meshes, to appear (2022) [[PDF]()]
+- Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, Fused BVH to Ray Trace Level of Detail Meshes, AMD Technical Report, No. 22-10-b79d (2022) [[PDF](https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf)]
 - Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada, GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination, to appear (2022)
 - Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, Compression and Interactive Visualization of Terabyte Scale Volumetric RGBA Data with Voxel-scale Details, SIGGRAPH 2022 Posters (2022)
 - Shin Fujieda, Yusuke Tokuyoshi, Takahiro Harada, Stochastic Light Culling for Single Scattering in Participating Media, Eurographics 2022 Short Papers (2022)
