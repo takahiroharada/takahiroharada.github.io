@@ -15,10 +15,10 @@ permalink: /oldstuff/
 - 原田隆宏，田中正幸，越塚誠一，河口洋一郎，[粒子法シミュレーションの並列化](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9798&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol.48, No.11,3557-3567(2007)
 - 原田隆宏，田中正幸，越塚誠一，河口洋一郎，[グラフィックスハードウェアを用いた個別要素法の高速化](https://www.jstage.jst.go.jp/article/jsces/2007/0/2007_0_20070011/_article/-char/ja)，日本計算工学会論文集，No.20070011(2007) [PDF]
 - 原田隆宏，越塚誠一，[SPH法における壁境界計算手法の改良](https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=9969)，情報処理学会論文誌，Vol.48, No.4, 1838-1846(2007) [PDF]
-- 原田隆宏，越塚誠一，布と高解像度のモデルとのリアルタイム衝突計算，情報処理学会論文誌，Vol.48, No.4, 1829-1837(2007) [PDF]
-- 原田隆宏，越塚誠一，離散境界を用いた距離関数の構築手法，情報処理学会論文誌，Vol.48, No.4, 1820-1828(2007) [PDF]
+- 原田隆宏，越塚誠一，[布と高解像度のモデルとのリアルタイム衝突計算](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9968&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol.48, No.4, 1829-1837(2007) [PDF]
+- 原田隆宏，越塚誠一，[離散境界を用いた距離関数の構築手法](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9967&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol.48, No.4, 1820-1828(2007) [PDF]
 - 原田隆宏，鈴木幸人，越塚誠一，荒川貴博，庄子習一，MPS法を用いたマイクロ混相流3次元解析，日本機械学会論文誌(B)，Vol.73, No.726, 437-444(2007) [INDEX]
-- 原田隆宏，越塚誠一，GPUを用いた多層ポリゴンモデルの高速ボクセル化手法，情報処理学会論文誌，Vol.47, No.10, 2959-2962(2006)[PDF]
+- 原田隆宏，越塚誠一，[GPUを用いた多層ポリゴンモデルの高速ボクセル化手法](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=10162&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol.47, No.10, 2959-2962(2006)[PDF]
 - 原田隆宏，越塚誠一，[グラフィックスハードウェアを用いた高速なソリッドボクセライゼーション](https://www.jstage.jst.go.jp/article/jsces/2006/0/2006_0_20060023/_article/-char/ja)，日本計算工学会論文集，No.20060023(2006)[PDF]
 - 原田隆宏，鈴木幸人，越塚誠一，荒川貴博，庄子習一，MPS法によるマイクロ流体の液滴生成シミュレーション，日本機械学会論文誌(B)，Vol.71, No.711，2637-2641(2005)[INDEX]
 
@@ -30,11 +30,11 @@ permalink: /oldstuff/
 - 今村紀之, 原田隆宏, 河口洋一郎, 境界マップを用いた高速な流体弾性体連成シミュレーション, Visual Computing/グラフィクスとCAD合同シンポジウム, XX-XX(2008)
 - 原田隆宏，政家一誠，越塚誠一，河口洋一郎，複数のGPUを用いた粒子法シミュレーションの並列化，第13回日本計算工学講演会論文集，13 (1), 287-288 (2008)
 - 原田隆宏，政家一誠，越塚誠一，河口洋一郎，[GPU上での粒子法シミュレーションの空間局所性を用いた高速化](https://www.jstage.jst.go.jp/article/jsces/2008/0/2008_0_20080016/_article/-char/ja)，第13回日本計算工学講演会論文集，13(1), 289-290 (2008)
-- 原田隆宏，越塚誠一，河口洋一郎，流体と布のリアルタイム連成シミュレーション，情報処理学会研究報告，No.129, 13-18(2007)グラフィックスとCAD研究会，優秀研究発表賞受賞
+- 原田隆宏，越塚誠一，河口洋一郎，[流体と布のリアルタイム連成シミュレーション](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=37984&item_no=1&page_id=13&block_id=8)，情報処理学会研究報告，No.129, 13-18(2007)グラフィックスとCAD研究会，優秀研究発表賞受賞
 - 嶋田有紀，新谷幹夫, 白石路雄，原田隆宏，[GPUシェーダーを用いた雲の高速レンダリング](https://www.jstage.jst.go.jp/article/aiieej/35vc/0/35vc_0_107/_article/-char/ja)，Visual Computing/グラフィクスとCAD合同シンポジウム, 107-112(2007)
 - 原田隆宏，越塚誠一，河口洋一郎，[GPUを用いたSmoothed Particle Hydrodynamicsの高速化](https://www.jstage.jst.go.jp/article/aiieej/35vc/0/35vc_0_175/_article/-char/ja)，Visual Computing/グラフィクスとCAD合同シンポジウム, 175-180(2007)Visual Computing賞
 - 原田隆宏，越塚誠一，河口洋一郎，GPUを用いたSPHシミュレーション，第12回日本計算工学講演会論文集，101-102(2007)グラフィックスアワード，最優秀賞
-- 原田隆宏，田中正幸，越塚誠一，河口洋一郎，GPUを用いたリアルタイム剛体シミュレーション，情報処理学会研究報告，No.126, 79-84(2007)[PDF]グラフィックスとCAD研究会，優秀研究発表賞受賞, 平成19年度山下記念研究賞 [WEB]
+- 原田隆宏，田中正幸，越塚誠一，河口洋一郎，[GPUを用いたリアルタイム剛体シミュレーション](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=38038&item_no=1&page_id=13&block_id=8)，情報処理学会研究報告，No.126, 79-84(2007)[PDF]グラフィックスとCAD研究会，優秀研究発表賞受賞, 平成19年度山下記念研究賞 [WEB]
 - 原田隆宏，越塚誠一，[GPUを用いた動的に変形する高解像度ポリゴンモデルと布のリアルタイムシミュレーション](https://www.jstage.jst.go.jp/article/jsmecmd/2006.19/0/2006.19_709/_article/-char/ja)，日本機械学会第19回計算力学講演会論文集，709-710(2006)
 - 原田隆宏，越塚誠一，粒子法を用いた複雑形状内の流体解析，日本機械学会第19回計算力学講演会論文集，掲載予定
 - 近藤雅裕，田中正幸，原田隆宏，越塚誠一，粒子法弾性体大変形シミュレーション，日本機械学会第19回計算力学講演会論文集，掲載予定
