@@ -7,14 +7,14 @@ permalink: /oldstuff/
 ## Journals
 
 - 原田隆宏，政家一誠, [複数ＧＰＵを用いたリアルタイム粒子法シミュレーションのレンダリングの負荷分散](https://www.jstage.jst.go.jp/article/jvs/28-1/1/28-1_1_239/_article/-char/ja), 可視化情報学会誌2008 年 28-1 巻 1 号 p. 239
-- 原田隆宏，政家一誠，越塚誠一，河口洋一郎，複数のGPUを用いた粒子法シミュレーションの並列化，情報処理学会論文誌，Vol. 49, No.12(2008)
+- 原田隆宏，政家一誠，越塚誠一，河口洋一郎，[複数のGPUを用いた粒子法シミュレーションの並列化](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9375&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol. 49, No.12(2008)
 - 原田隆宏，政家一誠，越塚誠一，河口洋一郎，[GPU上での粒子法シミュレーションの空間局所性を用いた高速化](https://www.jstage.jst.go.jp/article/jsces/2008/0/2008_0_20080016/_article/-char/ja)，日本計算工学会論文集，No.20080016(2008)
 - 原田隆宏，越塚誠一，島崎克教，[MPS法における壁境界計算モデルの改良](https://www.jstage.jst.go.jp/article/jsces/2008/0/2008_0_20080006/_article/-char/ja)，日本計算工学会論文集，No.20080006(2008) [PDF]
 - 原田隆宏，越塚誠一，河口洋一郎，[GPUを用いた粒子法シミュレーションのためのスライスデータ構造](https://www.jstage.jst.go.jp/article/jsces/2007/0/2007_0_20070028/_article/-char/ja)，日本計算工学会論文集，No. 20070028(2007)[LINK]
-- 原田隆宏，越塚誠一，河口洋一郎，粒子からの表面構築の改良，情報処理学会論文誌，Vol.48, No.12,4059-4063(2007)[PDF]
-- 原田隆宏，田中正幸，越塚誠一，河口洋一郎，粒子法シミュレーションの並列化，情報処理学会論文誌，Vol.48, No.11,3557-3567(2007)
+- 原田隆宏，越塚誠一，河口洋一郎，[粒子からの表面構築の改良](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9780&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol.48, No.12,4059-4063(2007)[PDF]
+- 原田隆宏，田中正幸，越塚誠一，河口洋一郎，[粒子法シミュレーションの並列化](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9798&item_no=1&page_id=13&block_id=8)，情報処理学会論文誌，Vol.48, No.11,3557-3567(2007)
 - 原田隆宏，田中正幸，越塚誠一，河口洋一郎，[グラフィックスハードウェアを用いた個別要素法の高速化](https://www.jstage.jst.go.jp/article/jsces/2007/0/2007_0_20070011/_article/-char/ja)，日本計算工学会論文集，No.20070011(2007) [PDF]
-- 原田隆宏，越塚誠一，SPH法における壁境界計算手法の改良，情報処理学会論文誌，Vol.48, No.4, 1838-1846(2007) [PDF]
+- 原田隆宏，越塚誠一，[SPH法における壁境界計算手法の改良](https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&item_id=9969)，情報処理学会論文誌，Vol.48, No.4, 1838-1846(2007) [PDF]
 - 原田隆宏，越塚誠一，布と高解像度のモデルとのリアルタイム衝突計算，情報処理学会論文誌，Vol.48, No.4, 1829-1837(2007) [PDF]
 - 原田隆宏，越塚誠一，離散境界を用いた距離関数の構築手法，情報処理学会論文誌，Vol.48, No.4, 1820-1828(2007) [PDF]
 - 原田隆宏，鈴木幸人，越塚誠一，荒川貴博，庄子習一，MPS法を用いたマイクロ混相流3次元解析，日本機械学会論文誌(B)，Vol.73, No.726, 437-444(2007) [INDEX]
@@ -25,7 +25,7 @@ permalink: /oldstuff/
 
 ## Domestic Conference 
 
-- 安田 廉, 原田 隆宏, 河口 洋一郎, 粒子法による流体のシミュレーションデータを活用した効率的な可視化, 情報処理学会研究報告, No.134, XX-XX(2009), 優秀研究発表賞受賞
+- 安田 廉, 原田 隆宏, 河口 洋一郎, [粒子法による流体のシミュレーションデータを活用した効率的な可視化](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=61327&item_no=1&page_id=13&block_id=8), 情報処理学会研究報告, No.134, XX-XX(2009), 優秀研究発表賞受賞
 - 安田 廉, 原田 隆宏, 河口 洋一郎, 摩擦を含む粉体のリアルタイムシミュレーション, Visual Computing/グラフィクスとCAD合同シンポジウム, XX-XX(2008)
 - 今村紀之, 原田隆宏, 河口洋一郎, 境界マップを用いた高速な流体弾性体連成シミュレーション, Visual Computing/グラフィクスとCAD合同シンポジウム, XX-XX(2008)
 - 原田隆宏，政家一誠，越塚誠一，河口洋一郎，複数のGPUを用いた粒子法シミュレーションの並列化，第13回日本計算工学講演会論文集，13 (1), 287-288 (2008)
