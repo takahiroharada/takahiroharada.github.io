@@ -7,6 +7,8 @@ layout: home
 
 ## Papers
 
+- Atsushi Yoshimura, Takahiro Harada, **Subspace Culling for Ray-Box Intersection**, Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
+- Atsushi Yoshimura, Sho Ikeda, Takahiro Harada, **Geometry and Texture Streaming Architecture in Radeon ProRender**, AMD Technical Report No. 22-10-daf5, October 13 (2022)
 - Shin Fujieda, Takahiro Harada, **Progressive Material Caching**, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf)]
 - Pieterjan Bartels, Takahiro Harada, **Combining GPU Tracing Methods within a Single Ray Query**, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf)]
 - Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, **Fused BVH to Ray Trace Level of Detail Meshes**, ACM SIGGRAPH ASIA Posters (2022) [[PDF]()], [[AMD Technical Report, No. 22-10-b79d](https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf)]
@@ -21,9 +23,9 @@ layout: home
 - Yusuke Tokuyoshi and Takahiro Harada, Bidirectional Path Tracing Using Backward Stochastic Light Culling, ACM SIGGRAPH 2018 Talks (2018)
 - Young J. Kim, SeongKi Kim, Takahiro Harada, Energy-efficient Global Illumination Algorithms for Mobile Devices using Dynamic Voltage and Frequency Scaling, Computers & Graphics Vol. 70, 198-205 (2018) [Link]
 - Yusuke Tokuyoshi and Takahiro Harada, Stochastic Light Culling for VPLs on GGX Microsurfaces, Computer Graphics Forum 36, 4 (EGSR 2017) (2017)
-- A Framework to Transform In-Core GPU Algorithms to Out-of-Core Algorithms (2016) [Abstract, Sup]
+- A Framework to Transform In-Core GPU Algorithms to Out-of-Core Algorithms (2016) [[Abstract](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2016_i3d.pdf), [Sup](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2016_i3d_sup.pdf)]
 - Yusuke Tokuyoshi, Takahiro Harada, Stochastic Light Culling, The Journal of Computer Graphics Techniques (2016) [PDF]
-- Takahiro Harada, Masahiro Fujita, Ray Tracing Irregularly Distributed Samples on Multiple GPUs, High Performance Graphics Poster (2014) [Project, Abstract]
+- Takahiro Harada, Masahiro Fujita, Ray Tracing Irregularly Distributed Samples on Multiple GPUs, High Performance Graphics Poster (2014) [Project, [Abstract](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2014_hpg.pdf)]
 - Takahiro Harada, Micro-buffer Rasterization Reduction Method for Environment Lighting Using Point-based Rendering, Graphics Interface (2014)[Paper]
 - Dongsoo Han, Takahiro Harada, Tridiagonal Matrix Formulation for Inextensible Hair Strand Simulation, VRIPHYS, 11-16 (2013) [Paper]
 - Takahiro Harada, A 2.5D Culling for Forward+, SIGGRAPH ASIA 2012 Technical Brief, No.18 (2012)[Abstract, Slide][ACM]
