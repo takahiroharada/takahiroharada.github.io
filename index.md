@@ -7,6 +7,7 @@ layout: home
 
 ## Papers
 
+- Shin Fujieda, Chih-Chen Kao, Takahiro Harada, **Neural Intersection Function**, HPG(2023)
 - Atsushi Yoshimura, Takahiro Harada, **Subspace Culling for Ray-Box Intersection**, Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
 - Atsushi Yoshimura, Sho Ikeda, Takahiro Harada, **Geometry and Texture Streaming Architecture in Radeon ProRender**, AMD Technical Report No. 22-10-daf5, October 13 (2022)
 - Shin Fujieda, Takahiro Harada, **Progressive Material Caching**, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf)]
