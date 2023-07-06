@@ -7,13 +7,13 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Neural Intersection Function**,
+- <img align="right" width="50" src="./imgs/nif.jpg"/> **Neural Intersection Function**,
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada,
-  - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[Official](https://diglib.eg.org/handle/10.2312/hpg20231135)]
+  - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[EG](https://diglib.eg.org/handle/10.2312/hpg20231135)]
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Subspace Culling for Ray-Box Intersection**,
+- <img align="right" width="50" src="./imgs/subspaceculling.jpg"/> **Subspace Culling for Ray-Box Intersection**,
   - Atsushi Yoshimura, Takahiro Harada,
-  - Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
+  - Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023) [[Arxiv](https://arxiv.org/abs/2305.08343)][[ACM](https://dl.acm.org/doi/10.1145/3585503)]
 
 - <img align="right" width="50" src="./imgs/icon.jpg"/> **Geometry and Texture Streaming Architecture in Radeon ProRender**,
   - Atsushi Yoshimura, Sho Ikeda, Takahiro Harada,
