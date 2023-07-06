@@ -7,15 +7,20 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Neural Intersection Function**, Shin Fujieda, Chih-Chen Kao, Takahiro Harada, High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[Official](https://diglib.eg.org/handle/10.2312/hpg20231135)]
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Neural Intersection Function**, Shin Fujieda, Chih-Chen Kao, Takahiro Harada,
+  - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[Official](https://diglib.eg.org/handle/10.2312/hpg20231135)]
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Subspace Culling for Ray-Box Intersection**, Atsushi Yoshimura, Takahiro Harada, Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Subspace Culling for Ray-Box Intersection**, Atsushi Yoshimura, Takahiro Harada,
+  - Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Geometry and Texture Streaming Architecture in Radeon ProRender**, Atsushi Yoshimura, Sho Ikeda, Takahiro Harada, AMD Technical Report No. 22-10-daf5, October 13 (2022)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Geometry and Texture Streaming Architecture in Radeon ProRender**, Atsushi Yoshimura, Sho Ikeda, Takahiro Harada,
+  - AMD Technical Report No. 22-10-daf5, October 13 (2022)
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Progressive Material Caching**, Shin Fujieda, Takahiro Harada, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf)]
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Progressive Material Caching**, Shin Fujieda, Takahiro Harada,
+  - ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf)]
 
-- <img align="right" width="50" src="./imgs/icon.jpg"/> **Combining GPU Tracing Methods within a Single Ray Query**, Pieterjan Bartels, Takahiro Harada, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf)]
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Combining GPU Tracing Methods within a Single Ray Query**, Pieterjan Bartels, Takahiro Harada,
+  - ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf)]
 
 - Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, **Fused BVH to Ray Trace Level of Detail Meshes**, ACM SIGGRAPH ASIA Posters (2022) [[PDF]()], [[AMD Technical Report, No. 22-10-b79d](https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf)]
 - Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada, **GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination**, to appear (2022)
