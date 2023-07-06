@@ -7,9 +7,15 @@ layout: home
 
 ## Papers
 
-- Shin Fujieda, Chih-Chen Kao, Takahiro Harada, **Neural Intersection Function**, HPG(2023)
-- Atsushi Yoshimura, Takahiro Harada, **Subspace Culling for Ray-Box Intersection**, Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
-- Atsushi Yoshimura, Sho Ikeda, Takahiro Harada, **Geometry and Texture Streaming Architecture in Radeon ProRender**, AMD Technical Report No. 22-10-daf5, October 13 (2022)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Neural Intersection Function**
+  - Shin Fujieda, Chih-Chen Kao, Takahiro Harada,
+  - HPG(2023)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Subspace Culling for Ray-Box Intersection**
+  - Atsushi Yoshimura, Takahiro Harada, 
+  - Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> **Geometry and Texture Streaming Architecture in Radeon ProRender**
+  - Atsushi Yoshimura, Sho Ikeda, Takahiro Harada, 
+  - AMD Technical Report No. 22-10-daf5, October 13 (2022)
 - Shin Fujieda, Takahiro Harada, **Progressive Material Caching**, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf)]
 - Pieterjan Bartels, Takahiro Harada, **Combining GPU Tracing Methods within a Single Ray Query**, ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf)]
 - Paritosh Kulkarni, Sho Ikeda, Takahiro Harada, **Fused BVH to Ray Trace Level of Detail Meshes**, ACM SIGGRAPH ASIA Posters (2022) [[PDF]()], [[AMD Technical Report, No. 22-10-b79d](https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf)]
@@ -61,8 +67,12 @@ layout: home
 
 ## Conference Talks
 
-- Takahiro Harada, HIP RT: A Ray Tracing Library in HIP, High Performance Graphics 2022 Hot3D (2022)
-- Takahiro Harada, Real-Time Ray-Tracing Techniques for Integration into Existing Renderers, GDC (2018)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> HIP RT: A Ray Tracing Library in HIP
+  - Takahiro Harada
+  - High Performance Graphics 2022 Hot3D (2022)
+- <img align="right" width="50" src="./imgs/icon.jpg"/> Real-Time Ray-Tracing Techniques for Integration into Existing Renderers, 
+  - Takahiro Harada
+  - GDC (2018)
 - Takahiro Harada, Radeon ProRender and Radeon Rays in a Gaming Rendering Workflow, GDC (2017)
 - Yusuke Tokuyoshi and Takahiro Harada, Stochastic Light Culling, I3D (2017) [Slide + Code]
 - A. Keller, I. Wald, T. Harada, D. Kozlov, R. Karrenberg, L. Peterson, T. Hector, The Quest for The Ray Tracing API, SIGGRAPH Course (2016) [Project]
