@@ -31,16 +31,36 @@ layout: home
   - Pieterjan Bartels, Takahiro Harada,
   - ACM SIGGRAPH ASIA Technical Communications (2022) [[PDF](https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf)]
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **Fused BVH to Ray Trace Level of Detail Meshes**
+- <img align="right" width="64" src="./imgs/fusedbvh.jpg"/> **Fused BVH to Ray Trace Level of Detail Meshes**
   - Paritosh Kulkarni, Sho Ikeda, Takahiro Harada,
   - ACM SIGGRAPH ASIA Posters (2022) [[PDF]()], [[AMD Technical Report, No. 22-10-b79d](https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf)]
-- Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada, **GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination**, to appear (2022)
-- Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, Compression and Interactive Visualization of Terabyte Scale Volumetric RGBA Data with Voxel-scale Details, SIGGRAPH 2022 Posters (2022)
-- Shin Fujieda, Yusuke Tokuyoshi, Takahiro Harada, Stochastic Light Culling for Single Scattering in Participating Media, Eurographics 2022 Short Papers (2022)
-- Atsushi Yoshimura, Yusuke Tokuyoshi, Takahiro Harada, Multi-Fragment Rendering for Glossy Bounces on the GPU, EGSR 2022 Industry Track (2022)
-- Sho Ikeda, Paritosh Kulkarni, Takahiro Harada, Multi-Resolution Geometric Representation using BoundingVolume Hierarchy for Ray Tracing, AMD Technical Report, No. 22-02-f322, (2022) [[PDF](https://gpuopen.com/download/publications/GPUOpen_BVHApproximation.pdf)]
-- Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, Sparse Volume Rendering using Hardware Ray Tracing and Block Walking, SA '21 Technical Communications: SIGGRAPH Asia 2021 Technical Communications, Article No. 19, Pages 1–4 (2021) [[PDF](https://gpuopen.com/download/publications/SA2021_BlockWalk.pdf)][[ACM](https://dl.acm.org/doi/abs/10.1145/3478512.3488608)]
+
+- <img align="right" width="64" src="./imgs/gi1.jpg"/> **GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination**
+  - Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada, 
+  - AMD Technical Report, No.  22-10-9831, October 18 (2022) [[PDF](https://gpuopen.com/download/publications/GPUOpen2022_GI1_0.pdf)]
+
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Compression and Interactive Visualization of Terabyte Scale Volumetric RGBA Data with Voxel-scale Details**
+  - Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, 
+  - SIGGRAPH 2022 Posters (2022)
+
+- <img align="right" width="64" src="./imgs/slc.jpg"/> **Stochastic Light Culling for Single Scattering in Participating Media**
+  - Shin Fujieda, Yusuke Tokuyoshi, Takahiro Harada, 
+  - Eurographics 2022 Short Papers (2022) [[PDF](https://gpuopen.com/download/publications/EG22_VolumeSlc.pdf)]
+
+- <img align="right" width="64" src="./imgs/mfr.jpg"/> **Multi-Fragment Rendering for Glossy Bounces on the GPU**
+  - Atsushi Yoshimura, Yusuke Tokuyoshi, Takahiro Harada, 
+  - EGSR 2022 Industry Track (2022)
+
+- <img align="right" width="64" src="./imgs/mrgr.jpg"/> **Multi-Resolution Geometric Representation using BoundingVolume Hierarchy for Ray Tracing**
+  - Sho Ikeda, Paritosh Kulkarni, Takahiro Harada, 
+  - AMD Technical Report, No. 22-02-f322, (2022) [[PDF](https://gpuopen.com/download/publications/GPUOpen_BVHApproximation.pdf)]
+
+- <img align="right" width="64" src="./imgs/svr.jpg"/> **Sparse Volume Rendering using Hardware Ray Tracing and Block Walking**
+  - Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, 
+  - SA '21 Technical Communications: SIGGRAPH Asia 2021 Technical Communications, Article No. 19, Pages 1–4 (2021) [[PDF](https://gpuopen.com/download/publications/SA2021_BlockWalk.pdf)][[ACM](https://dl.acm.org/doi/abs/10.1145/3478512.3488608)]
+
 - 原田隆宏, フレッシュマンに向けたプログラミングのススメ：9．これから世界を視野に入れて働くエンジニアへ, 会誌「情報処理」, Vol.60, No.6(2019) [[LINK](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=195582&item_no=1&page_id=13&block_id=8)]
+
 - Yusuke Tokuyoshi and Takahiro Harada, Hierarchical Russian Roulette for Vertex Connections, ACM Transactions on Graphics 38, 4, 36 (2019)
 - Yusuke Tokuyoshi and Takahiro Harada, Bidirectional Path Tracing Using Backward Stochastic Light Culling, ACM SIGGRAPH 2018 Talks (2018)
 - Young J. Kim, SeongKi Kim, Takahiro Harada, Energy-efficient Global Illumination Algorithms for Mobile Devices using Dynamic Voltage and Frequency Scaling, Computers & Graphics Vol. 70, 198-205 (2018) [Link]
