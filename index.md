@@ -7,6 +7,10 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/lpe.jpg"/> **Local Positional Encoding for Multi-Layer Perceptrons**,
+  - Shin Fujieda, Atsushi Yoshimura, Takahiro Harada,
+  - Pacific Graphics (2023) [[Arxiv](https://arxiv.org/abs/2309.15101)]
+
 - <img align="right" width="64" src="./imgs/nif.jpg"/> **Neural Intersection Function**,
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada,
   - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[EG](https://diglib.eg.org/handle/10.2312/hpg20231135)]
