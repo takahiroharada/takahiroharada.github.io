@@ -76,7 +76,7 @@ layout: home
 - Dongsoo Han, Takahiro Harada, Tridiagonal Matrix Formulation for Inextensible Hair Strand Simulation, VRIPHYS, 11-16 (2013) [Paper]
 - Takahiro Harada, A 2.5D Culling for Forward+, SIGGRAPH ASIA 2012 Technical Brief, No.18 (2012)[Abstract, Slide][ACM]
 - Dongsoo Han, Takahiro Harada, Real-time Hair Simulation with Efficient Hair Style Preservation, VRIPHYS, 5-8 (2012)[EG][PDF, Slide] (Simulation tech of TressFX)
-- Takahiro Harada, Jay McKee, Jason C.Yang, Forward+: Bringing Deferred Lighting to the Next Level, Eurographics Short Paper, 5-8 (2012)[Paper][Slide]
+- Takahiro Harada, Jay McKee, Jason C.Yang, Forward+: Bringing Deferred Lighting to the Next Level, Eurographics Short Paper, 5-8 (2012)[[Paper](./publications/forward_plus.pdf)][Slide]
 - Xuan Yu, Jason C. Yang, Justin Hensley, Takahiro Harada, Jingyi Yu, A Framework for Rendering Complex Scattering Effects on Hair, Proceedings of ACM SIGGRAPH Symposium on Interactive 3D Graphics & Games, 111-118 (2012)  (Rendering tech of TressFX)
 - Takahiro Harada, Heterogeneous Particle-Based Simulation, SIGGRAPH ASIA 2011 Sketch, No.19 (2011)[ACM]
 - Takahiro Harada, A Parallel Constraint Solver for a Rigid Body Simulation, SIGGRAPH ASIA 2011 Sketch, No.22 (2011)[ACM]
