@@ -7,6 +7,10 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Real-time Rendering of Glossy Reflections using Ray Tracing and Two-level Radiance Caching**
+  - Kenta Eto, Sylvain Meunier, Takahiro Harada, Guillaume Boissé, 
+  - ACM SIGGRAPH ASIA Technical Communications (2023)
+  - 
 - <img align="right" width="64" src="./imgs/lpe.jpg"/> **Local Positional Encoding for Multi-Layer Perceptrons**,
   - Shin Fujieda, Atsushi Yoshimura, Takahiro Harada,
   - Pacific Graphics Short Papers and Posters (2023) [[Arxiv](https://arxiv.org/abs/2309.15101)][[EG](https://diglib.eg.org/handle/10.2312/pg20231273)]
