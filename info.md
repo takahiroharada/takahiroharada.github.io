@@ -1,3 +1,9 @@
+---
+layout: page
+title: About
+permalink: /info/
+---
+
 ## California 
 - [Golden Poppy Annual Day Use Pass](https://store.parks.ca.gov/product/golden-poppy-annual-day-use-pass/)
   - [List of the parks](https://store.parks.ca.gov/wp-content/uploads/2015/03/DPR335GP.pdf)
