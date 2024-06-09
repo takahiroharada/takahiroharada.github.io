@@ -14,6 +14,7 @@ permalink: /info/
 ## Yamanashi
 - [桔梗信玄餅工場テーマパーク](http://themepark.kikyouya.co.jp/)
 - [水と森のテーマパーク、さかな公園](https://yamanakako.info/fish_park.php)
+- 富士湧水の里水族館
 - [忍野八海](https://yamanakako.info/8lakes_top.php)
   - 世界文化遺産, 忍野八海（おしのはっかい）は富士山噴火のあと、雪解け水が溶岩をぬけ、数十年かけて流れ込んでできた8つの湧水池の総称です。
 - [ほったらかし温泉](http://www.hottarakashi-onsen.com/)
@@ -31,3 +32,8 @@ permalink: /info/
 - [道の駅こぶちざわ](https://www.city.hokuto.yamanashi.jp/mountain-guide/spot/23085.html)
 - [サンメドウズ清里 清里テラス](https://www.sunmeadows.co.jp/)
 - [忍野 しのびの里](https://www.oshinoninja.com/)
+- [山梨県立科学館](https://www.kagakukan.pref.yamanashi.jp/)
+- [甲府夢小路](https://koshuyumekouji.com/)
+- 北口本宮冨士浅間神社
+- 富岳風穴・鳴沢氷穴
+  - 富岳風穴なだらかな横穴を周遊できる洞窟 · 鳴沢氷穴自然の起伏に富んだ竪穴型洞窟  
