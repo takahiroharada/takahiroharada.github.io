@@ -7,6 +7,10 @@ layout: home
 
 ## Papers
 
+
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
+  - X (2024)
+
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Neural Texture Block Compression**,
   - Shin Fujieda, Takahiro Harada
   - MAM-MANER EGSR (2024)
