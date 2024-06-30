@@ -9,7 +9,8 @@ layout: home
 
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
-  - X (2024)
+  - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
+  - High Performance Graphics (2024)
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Neural Texture Block Compression**,
   - Shin Fujieda, Takahiro Harada
