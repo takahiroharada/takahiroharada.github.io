@@ -8,7 +8,7 @@ layout: home
 ## Papers
 
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
+- <img align="right" width="64" src="./imgs/hiprt_pbrt.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
   - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
   - High Performance Graphics (2024)
 
