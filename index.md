@@ -26,12 +26,12 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/nif.jpg"/> **Neural Intersection Function**,
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada,
-  - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[EG](https://diglib.eg.org/handle/10.2312/hpg20231135)]
+  - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[EG](https://diglib.eg.org/handle/10.2312/hpg20231135)][:film_strip:](https://www.youtube.com/live/fFvyG_dLfmA?si=ySU85jyIrqr6qrqo&t=10470)
 
 - <img align="right" width="64" src="./imgs/subspaceculling.jpg"/> **Subspace Culling for Ray-Box Intersection**,
   - Atsushi Yoshimura, Takahiro Harada,
   - Proceedings of the ACM on Computer Graphics and Interactive Techniques, vol. 6, no. 1 (2023) [[Arxiv](https://arxiv.org/abs/2305.08343)][[ACM](https://dl.acm.org/doi/10.1145/3585503)]
-[[Video](https://youtu.be/jurhq5ZnsBk?t=23&si=rUGboshUU9lUV9rF)]
+[:film_strip:](https://youtu.be/jurhq5ZnsBk?t=23&si=rUGboshUU9lUV9rF)
 
 - <img align="right" width="64" src="./imgs/walr.jpg"/> **Weighted À-Trous Linear Regression (WALR) for Real-Time Diffuse Indirect Lighting Denoising**
   - Sylvain Meunier, Takahiro Harada. 
