@@ -94,7 +94,7 @@ layout: home
 - Xuan Yu, Jason C. Yang, Justin Hensley, Takahiro Harada, Jingyi Yu, A Framework for Rendering Complex Scattering Effects on Hair, Proceedings of ACM SIGGRAPH Symposium on Interactive 3D Graphics & Games, 111-118 (2012)  (Rendering tech of TressFX)
 - Takahiro Harada, Heterogeneous Particle-Based Simulation, SIGGRAPH ASIA 2011 Sketch, No.19 (2011)[ACM]
 - Takahiro Harada, A Parallel Constraint Solver for a Rigid Body Simulation, SIGGRAPH ASIA 2011 Sketch, No.22 (2011)[[ACM](https://dl.acm.org/doi/10.1145/2077378.2077406)][[Paper](https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/2011_A%20Parallel%20Constraint%20Solver%20for%20a%20Rigid%20Body%20Simulation.pdf)]
-- Fuchang Liu, Takahiro Harada, Youngeun Lee, Young J. Kim, Real-time Collision Culling of a Million Bodies on Graphics Processing Units, ACM Transactions on Graphics, SIGGRAPH ASIA (2010)[ACM] 
+- Fuchang Liu, Takahiro Harada, Youngeun Lee, Young J. Kim, Real-time Collision Culling of a Million Bodies on Graphics Processing Units, ACM Transactions on Graphics, SIGGRAPH ASIA (2010)[[ACM](https://dl.acm.org/doi/10.1145/1882261.1866180)][[Pdf](http://graphics.ewha.ac.kr/gSaP/gSaP.pdf)] 
 - Ren Yasuda, Takahiro Harada, Yoichiro Kawaguchi, Fast Rendering of Particle-Based Fluid by Utilizing Simulation Data, Eurographics Short Paper (2009)[EG]
 - Takahiro Harada, Issei Masaie, Seiichi Koshizuka, Yoichiro Kawaguchi, Massive Particles: Particle-based Simulations on Multiple GPUs, SIGGRAPH 2008 Talk [PDF]
 - Ren Yasuda, Takahiro Harada, Yoichiro Kawaguchi, Real-Time Simulation of Granular Materials using Graphics Hardware, International Conference on Computer Graphics, Imaging and Visualisation, 28-31 (2008)
