@@ -88,7 +88,7 @@ layout: home
 - Takahiro Harada, Masahiro Fujita, Ray Tracing Irregularly Distributed Samples on Multiple GPUs, High Performance Graphics Poster (2014) [Project, [Abstract](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2014_hpg.pdf)]
 - Takahiro Harada, Micro-buffer Rasterization Reduction Method for Environment Lighting Using Point-based Rendering, Graphics Interface (2014)[Paper]
 - Dongsoo Han, Takahiro Harada, Tridiagonal Matrix Formulation for Inextensible Hair Strand Simulation, VRIPHYS, 11-16 (2013) [Paper]
-- Takahiro Harada, A 2.5D Culling for Forward+, SIGGRAPH ASIA 2012 Technical Brief, No.18 (2012)[Abstract, Slide][ACM]
+- Takahiro Harada, A 2.5D Culling for Forward+, SIGGRAPH ASIA 2012 Technical Brief, No.18 (2012)[[PDF](https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/2012_sigAsia.pdf)][Slide][ACM]
 - Dongsoo Han, Takahiro Harada, Real-time Hair Simulation with Efficient Hair Style Preservation, VRIPHYS, 5-8 (2012)[EG][PDF, Slide] (Simulation tech of TressFX)
 - Takahiro Harada, Jay McKee, Jason C.Yang, Forward+: Bringing Deferred Lighting to the Next Level, Eurographics Short Paper, 5-8 (2012)[[Paper](./publications/forward_plus.pdf)][Slide]
 - Xuan Yu, Jason C. Yang, Justin Hensley, Takahiro Harada, Jingyi Yu, A Framework for Rendering Complex Scattering Effects on Hair, Proceedings of ACM SIGGRAPH Symposium on Interactive 3D Graphics & Games, 111-118 (2012)  (Rendering tech of TressFX)
