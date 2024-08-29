@@ -14,7 +14,7 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Neural Texture Block Compression**,
   - Shin Fujieda, Takahiro Harada
-  - MAM-MANER EGSR (2024) [[Arxiv](https://arxiv.org/abs/2407.09543v1)]
+  - MAM-MANER EGSR (2024) [[Arxiv](https://arxiv.org/abs/2407.09543v1)][[EG](https://diglib.eg.org/handle/10.2312/3607038)]
     
 - <img align="right" width="64" src="./imgs/rrgr.jpg"/> **Real-time Rendering of Glossy Reflections using Ray Tracing and Two-level Radiance Caching**, 
   - Kenta Eto, Sylvain Meunier, Takahiro Harada, Guillaume Boissé, 
