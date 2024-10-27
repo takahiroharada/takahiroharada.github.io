@@ -7,7 +7,7 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting**
+- <img align="right" width="64" src="./imgs/asgl.jpg"/> **Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting**
   - Yusuke Tokuyoshi, Sho Ikeda, Paritosh Kulkarni, and Takahiro Harada
   - SIGGRAPH ASIA 2024 Conference Papers (2024) [[Code](https://github.com/yusuketokuyoshi/VSGL)][[PDF](https://gpuopen.com/download/publications/Hierarchical_Light_Sampling_with_Accurate_Spherical_Gaussian_Lighting.pdf)][[ACM]()]
 
