@@ -7,6 +7,9 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting**
+  - Yusuke Tokuyoshi, Sho Ikeda, Paritosh Kulkarni, and Takahiro Harada
+  - SIGGRAPH ASIA 2024 Conference Papers (2024)
 
 - <img align="right" width="64" src="./imgs/hiprt_pbrt.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
   - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
