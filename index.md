@@ -11,6 +11,11 @@ layout: home
   - Yusuke Tokuyoshi, Sho Ikeda, Paritosh Kulkarni, and Takahiro Harada
   - SIGGRAPH ASIA 2024 Conference Papers (2024) [[Code](https://github.com/yusuketokuyoshi/VSGL)][[PDF](https://gpuopen.com/download/publications/Hierarchical_Light_Sampling_with_Accurate_Spherical_Gaussian_Lighting.pdf)][[ACM]()]
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Gradient Traversal: Accelerating Real-Time Rendering of
+Unstructured Volumetric Data**,
+  - Mehmet Oguz Derin, Takahiro Harada
+  - SIGGRAPH ASIA 2024 Posters (2024)
+
 - <img align="right" width="64" src="./imgs/hiprt_pbrt.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
   - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
   - High Performance Graphics (2024)
@@ -78,7 +83,7 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/svr.jpg"/> **Sparse Volume Rendering using Hardware Ray Tracing and Block Walking**
   - Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, 
-  - SA '21 Technical Communications: SIGGRAPH Asia 2021 Technical Communications, Article No. 19, Pages 1–4 (2021) [[PDF](https://gpuopen.com/download/publications/SA2021_BlockWalk.pdf)][[ACM](https://dl.acm.org/doi/abs/10.1145/3478512.3488608)]
+  - SIGGRAPH Asia 2021 Technical Communications, Article No. 19, Pages 1–4 (2021) [[PDF](https://gpuopen.com/download/publications/SA2021_BlockWalk.pdf)][[ACM](https://dl.acm.org/doi/abs/10.1145/3478512.3488608)]
 
 - 原田隆宏, フレッシュマンに向けたプログラミングのススメ：9．これから世界を視野に入れて働くエンジニアへ, 会誌「情報処理」, Vol.60, No.6(2019) [[LINK](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=195582&item_no=1&page_id=13&block_id=8)]
 
