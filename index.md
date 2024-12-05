@@ -7,14 +7,14 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="64" src="./imgs/asgl.jpg"/> **Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting**
+- <img align="right" width="64" src="./imgs/asgl.jpg"/> **Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting,**
   - Yusuke Tokuyoshi, Sho Ikeda, Paritosh Kulkarni, and Takahiro Harada
   - SIGGRAPH ASIA 2024 Conference Papers (2024) [[Code](https://github.com/yusuketokuyoshi/VSGL)][[PDF](https://gpuopen.com/download/publications/Hierarchical_Light_Sampling_with_Accurate_Spherical_Gaussian_Lighting.pdf)][[ACM](https://dl.acm.org/doi/10.1145/3680528.3687647)]
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Gradient Traversal: Accelerating Real-Time Rendering of
 Unstructured Volumetric Data**,
   - Mehmet Oguz Derin, Takahiro Harada
-  - SIGGRAPH ASIA 2024 Posters (2024)
+  - SIGGRAPH ASIA 2024 Posters (2024) [[ACM](https://dl.acm.org/doi/10.1145/3681756.3697979)]
 
 - <img align="right" width="64" src="./imgs/hiprt_pbrt.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
   - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
