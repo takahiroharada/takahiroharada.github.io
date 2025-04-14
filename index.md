@@ -7,6 +7,14 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **LSNIF: Locally-Subdivided Neural Intersection Function**,
+  - Shin Fujieda, Chih-Chen Kao, Takahiro Harada
+  - i3d (2025), to appear
+
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Nature Visible Only Digitally**,
+  - Yasuhiro Iba, Aya Kubota, Yusuke Takeda, Mehmet Oguz Derin, Shin Ikegami, Jörg Mutterlose, Takahiro Harada, Tomonori Takeuchi, Kazuki Tainaka
+  - Patterns, Volume 6, Issue 4, 101210 (2025) [[HTML](https://www.cell.com/patterns/fulltext/S2666-3899(25)00058-3)]
+
 - <img align="right" width="64" src="./imgs/asgl.jpg"/> **Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting,**
   - Yusuke Tokuyoshi, Sho Ikeda, Paritosh Kulkarni, and Takahiro Harada
   - SIGGRAPH ASIA 2024 Conference Papers (2024) [[Code](https://github.com/yusuketokuyoshi/VSGL)][[PDF](https://gpuopen.com/download/publications/Hierarchical_Light_Sampling_with_Accurate_Spherical_Gaussian_Lighting.pdf)][[ACM](https://dl.acm.org/doi/10.1145/3680528.3687647)]
