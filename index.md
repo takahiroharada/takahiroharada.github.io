@@ -30,7 +30,7 @@ Unstructured Volumetric Data**,
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Neural Texture Block Compression**,
   - Shin Fujieda, Takahiro Harada
-  - MAM-MANER EGSR (2024) [[Arxiv](https://arxiv.org/abs/2407.09543v1)][[EG]([https://diglib.eg.org/handle/10.2312/3607038](https://diglib.eg.org/items/c6e1f8c5-1530-47e5-a2bc-1adc3c57c39b))]
+  - MAM-MANER EGSR (2024) [[Arxiv](https://arxiv.org/abs/2407.09543v1)][[EG](https://diglib.eg.org/items/c6e1f8c5-1530-47e5-a2bc-1adc3c57c39b)]
     
 - <img align="right" width="64" src="./imgs/rrgr.jpg"/> **Real-time Rendering of Glossy Reflections using Ray Tracing and Two-level Radiance Caching**, 
   - Kenta Eto, Sylvain Meunier, Takahiro Harada, Guillaume Boissé, 
