@@ -7,7 +7,7 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **LSNIF: Locally-Subdivided Neural Intersection Function**,
+- <img align="right" width="64" src="./imgs/lsnif.jpg"/> **LSNIF: Locally-Subdivided Neural Intersection Function**,
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada
   - i3d (2025), to appear
 
