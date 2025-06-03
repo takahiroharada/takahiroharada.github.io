@@ -9,7 +9,7 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/lsnif.jpg"/> **LSNIF: Locally-Subdivided Neural Intersection Function**,
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada
-  - i3d (2025), to appear
+  - Proceedings of the ACM on Computer Graphics and Interactive Techniques, Volume 8, Issue 1 Article No.: 17, Pages 1 - 18 (2025), [[PDF](https://arxiv.org/abs/2504.21627)] [[ACM](https://dl.acm.org/doi/10.1145/3728295)] [[Slide](https://www.slideshare.net/slideshow/lsnif-locally-subdivided-neural-intersection-function/280097631)]
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Nature Visible Only Digitally**,
   - Yasuhiro Iba, Aya Kubota, Yusuke Takeda, Mehmet Oguz Derin, Shin Ikegami, Jörg Mutterlose, Takahiro Harada, Tomonori Takeuchi, Kazuki Tainaka
