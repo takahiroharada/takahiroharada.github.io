@@ -120,7 +120,7 @@ Unstructured Volumetric Data**,
 - Takahiro Harada, Seiichi Koshizuka, Katsunori Shimazaki, A Wall Boundary Computation Model by Polygons for Moving Particle Semi-Implicit Method, Proc. of WCCM8/ECOMAS2008, (2008) to Appear
 - Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi, Slided Data Structure for Particle-based Simulations on GPUs, Proc. of GRAPHITE, 55-62(2007) [PDF]
 - Takahiro Harada, Masayuki Tanaka, Seiichi Koshizuka, Yoichiro Kawaguchi, Real-time Coupling of Fluids and Rigid Bodies, Asian-Pacific Congress on Computational Mechanics(2007)The Best Computer Visualization Award
-- Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi, Construction of Non-Blobby Surface from Particles, Eurographics Short Paper, 41-44(2007) [PDF][EG]The Best Poster Prize (Photo from EG07 site. Thanks! X, X)
+- Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi, Construction of Non-Blobby Surface from Particles, Eurographics Short Paper, 41-44(2007) [PDF][EG](https://diglib.eg.org:8443/server/api/core/bitstreams/70b38c5c-de0e-4568-a5da-bb1d9fc2e824/content) The Best Poster Prize (Photo from EG07 site. Thanks! X, X)
 - Takahiro Harada, Masayuki Tanaka, Seiichi Koshizuka, Yoichiro Kawaguchi, Real-time Particle-based Simulation on GPUs, SIGGRAPH 2007 Poster (2007) [PDF]
 - Masahiro Kondo, Masayuki Tanaka, Takahiro Harada, Seiichi Koshizuka, Elastic Objects for Computer Graphic Field using MPS method, SIGGRAPH 2007 Poster (2007) [PDF]
 - Yuki Shimada, Mikio Shinya, Michio Shiraishi, Takahiro Harada, Real-time Rendering of Dynamic Clouds, SIGGRAPH 2007 Poster (2007)
