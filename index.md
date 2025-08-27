@@ -100,7 +100,7 @@ Unstructured Volumetric Data**,
 - Young J. Kim, SeongKi Kim, Takahiro Harada, Energy-efficient Global Illumination Algorithms for Mobile Devices using Dynamic Voltage and Frequency Scaling, Computers & Graphics Vol. 70, 198-205 (2018) [Link]
 - Yusuke Tokuyoshi and Takahiro Harada, Stochastic Light Culling for VPLs on GGX Microsurfaces, Computer Graphics Forum 36, 4 (EGSR 2017) (2017)
 - A Framework to Transform In-Core GPU Algorithms to Out-of-Core Algorithms (2016) [[Abstract](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2016_i3d.pdf), [Sup](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2016_i3d_sup.pdf)]
-- <img align="right" width="64" src="./imgs/2016_slc.jpg"/> **Stochastic Light Culling**
+- <img align="right" width="64" src="./imgs/2016_slc.jpg"/> [**Stochastic Light Culling**](https://takahiroharada.github.io/Stochastic%20Light%20Culling/)
   - Yusuke Tokuyoshi, Takahiro Harada,
   - The Journal of Computer Graphics Techniques (2016) [[Web](https://jcgt.org/published/0005/01/02/)][[Pdf](https://jcgt.org/published/0005/01/02/paper-lowres.pdf)]
 - Takahiro Harada, Masahiro Fujita, Ray Tracing Irregularly Distributed Samples on Multiple GPUs, High Performance Graphics Poster (2014) [Project, [Abstract](https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2014_hpg.pdf)]
