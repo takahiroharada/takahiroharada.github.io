@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Stochastic Light Culling 
-permalink: /publications/
+permalink: /publications/Stochastic Light Culling.md
 ---
 
 ## **Title**: Stochastic Light Culling  
