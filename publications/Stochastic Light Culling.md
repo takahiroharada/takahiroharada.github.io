@@ -2,6 +2,7 @@
 layout: default
 title: Stochastic Light Culling 
 permalink: /Stochastic Light Culling/
+nav_exclude: true
 ---
 
 ## **Title**: Stochastic Light Culling  
