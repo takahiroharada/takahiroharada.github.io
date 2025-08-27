@@ -1,3 +1,8 @@
+---
+layout: default
+title: Stochastic Light Culling 
+permalink: /publications/
+---
 
 ## **Title**: Stochastic Light Culling  
 ### **Authors**: Yusuke Tokuyoshi (Square Enix), Takahiro Harada (AMD)
