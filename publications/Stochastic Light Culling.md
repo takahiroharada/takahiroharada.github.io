@@ -2,6 +2,7 @@
 layout: default
 title: Stochastic Light Culling 
 permalink: /publications/
+hidden: true
 ---
 
 ## **Title**: Stochastic Light Culling  
