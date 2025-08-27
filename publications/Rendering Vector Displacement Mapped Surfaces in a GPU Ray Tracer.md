@@ -1,3 +1,10 @@
+---
+layout: default
+title: Rendering Vector Displacement Mapped Surfaces in a GPU Ray Tracer
+permalink: /publications/
+hidden: true
+---
+
 **“Rendering Vector Displacement Mapped Surfaces in a GPU Ray Tracer”** by **Takahiro Harada**, featured in *GPU Pro 6*:
 
 ---
