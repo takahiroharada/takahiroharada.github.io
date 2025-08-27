@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Stochastic Light Culling 
-permalink: /Stochastic_Light_Culling/
-nav_exclude: true
+title: ""
+permalink: /Stochastic Light Culling/
 ---
 
 ## **Title**: Stochastic Light Culling  
