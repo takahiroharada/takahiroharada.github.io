@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Multi-Resolution Geometric Representation using Bounding Volume Hierarchy for Ray Tracing
-permalink: /publications/
-hidden: true
+title: ""
+permalink: /Multi-Resolution Geometric Representation using Bounding Volume Hierarchy for Ray Tracing/
 ---
 
 # Multi-Resolution Geometric Representation using Bounding Volume Hierarchy for Ray Tracing
