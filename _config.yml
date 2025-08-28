@@ -42,6 +42,14 @@ minima:
     github: takahiroharada
     linkedin: takahiroharada
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: katex   # ← tells kramdown to hand‑off to KaTeX
+  math_engine_opts:
+    throw_on_error: false
+    strict: false
+    
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
