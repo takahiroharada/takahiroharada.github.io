@@ -44,11 +44,10 @@ minima:
 
 markdown: kramdown
 kramdown:
-  input: GFM
-  math_engine: katex   # ← tells kramdown to hand‑off to KaTeX
+  input: GFM          # use GitHub‑flavored Markdown syntax
+  math_engine: mathjax
   math_engine_opts:
-    throw_on_error: false
-    strict: false
+    preview: true    # show a tiny LaTeX preview while MathJax loads
     
 # Exclude from processing.
 # The following items will not be processed, by default.
