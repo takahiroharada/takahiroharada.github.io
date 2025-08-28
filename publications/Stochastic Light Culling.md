@@ -45,9 +45,9 @@ The paper introduces a novel **unbiased light culling technique** for rendering 
 
   - Probability of evaluating a light  
 
-    \[
+    $$
     p_{i}(l)=\min\!\left(\frac{f(l)}{\alpha_{i}},\,1\right)
-    \]
+    $$
 
   - A light is culled if  
 
