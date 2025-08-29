@@ -36,7 +36,7 @@ Unstructured Volumetric Data**,
   - Kenta Eto, Sylvain Meunier, Takahiro Harada, Guillaume Boissé, 
   - ACM SIGGRAPH ASIA Technical Communications (2023) [[ACM](https://dl.acm.org/doi/10.1145/3610543.3626167)]
   
-- <img align="right" width="64" src="./imgs/lpe.jpg"/> **Local Positional Encoding for Multi-Layer Perceptrons**,
+- <img align="right" width="64" src="./imgs/lpe.jpg"/> [**Local Positional Encoding for Multi-Layer Perceptrons**](./lpe/),
   - Shin Fujieda, Atsushi Yoshimura, Takahiro Harada,
   - Pacific Graphics Short Papers and Posters (2023) [[Arxiv](https://arxiv.org/abs/2309.15101)][[EG](https://diglib.eg.org/handle/10.2312/pg20231273)]
 
@@ -108,7 +108,7 @@ Unstructured Volumetric Data**,
 - Dongsoo Han, Takahiro Harada, Tridiagonal Matrix Formulation for Inextensible Hair Strand Simulation, VRIPHYS, 11-16 (2013) [Paper]
 - Takahiro Harada, A 2.5D Culling for Forward+, SIGGRAPH ASIA 2012 Technical Brief, No.18 (2012)[[PDF](https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/2012_sigAsia.pdf)][Slide][ACM]
 - Dongsoo Han, Takahiro Harada, Real-time Hair Simulation with Efficient Hair Style Preservation, VRIPHYS, 5-8 (2012)[EG][PDF, Slide] (Simulation tech of TressFX)
-- Takahiro Harada, Jay McKee, Jason C.Yang, Forward+: Bringing Deferred Lighting to the Next Level, Eurographics Short Paper, 5-8 (2012)[[Paper](./publications/forward_plus.pdf)][Slide]
+- Takahiro Harada, Jay McKee, Jason C.Yang, [Forward+: Bringing Deferred Lighting to the Next Level](./forward+/), Eurographics Short Paper, 5-8 (2012)[[Paper](./publications/forward_plus.pdf)][Slide]
 - Xuan Yu, Jason C. Yang, Justin Hensley, Takahiro Harada, Jingyi Yu, A Framework for Rendering Complex Scattering Effects on Hair, Proceedings of ACM SIGGRAPH Symposium on Interactive 3D Graphics & Games, 111-118 (2012)  (Rendering tech of TressFX)
 - Takahiro Harada, Heterogeneous Particle-Based Simulation, SIGGRAPH ASIA 2011 Sketch, No.19 (2011)[[ACM](https://dl.acm.org/doi/10.1145/2077378.2077402)][[PDF](./publications/5_2011SiggraphAsia.pdf)]
 - Takahiro Harada, A Parallel Constraint Solver for a Rigid Body Simulation, SIGGRAPH ASIA 2011 Sketch, No.22 (2011)[[ACM](https://dl.acm.org/doi/10.1145/2077378.2077406)][[Paper](https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/2011_A%20Parallel%20Constraint%20Solver%20for%20a%20Rigid%20Body%20Simulation.pdf)]
