@@ -28,7 +28,7 @@ Unstructured Volumetric Data**,
   - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
   - High Performance Graphics (2024)
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **Neural Texture Block Compression**,
+- <img align="right" width="64" src="./imgs/icon.jpg"/> [**Neural Texture Block Compression**](./ntbc/),
   - Shin Fujieda, Takahiro Harada
   - MAM-MANER EGSR (2024) [[Arxiv](https://arxiv.org/abs/2407.09543v1)][[EG](https://diglib.eg.org/items/c6e1f8c5-1530-47e5-a2bc-1adc3c57c39b)]
     
