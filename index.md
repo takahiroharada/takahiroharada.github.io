@@ -85,7 +85,7 @@ Unstructured Volumetric Data**,
   - Atsushi Yoshimura, Yusuke Tokuyoshi, Takahiro Harada, 
   - EGSR 2022 Industry Track (2022)
 
-- <img align="right" width="64" src="./imgs/mrgr.jpg"/> **Multi-Resolution Geometric Representation using BoundingVolume Hierarchy for Ray Tracing**
+- <img align="right" width="64" src="./imgs/mrgr.jpg"/> [**Multi-Resolution Geometric Representation using BoundingVolume Hierarchy for Ray Tracing**](/Multi-Resolution%20Geometric%20Representation%20using%20Bounding%20Volume%20Hierarchy%20for%20Ray%20Tracing/)
   - Sho Ikeda, Paritosh Kulkarni, Takahiro Harada, 
   - AMD Technical Report, No. 22-02-f322, (2022) [[PDF](https://gpuopen.com/download/publications/GPUOpen_BVHApproximation.pdf)]
 
