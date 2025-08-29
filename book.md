@@ -7,7 +7,7 @@ permalink: /books/
 
 |---|---|
 | ![](../imgs/b_gpuPro5.jpg)  | Takahiro Harada, [Semi-Static Load Balancing for Low Latency Ray Tracing on Heterogeneous Multiple GPUs](./publications/GPUPro7-5-4_heterogeneousLoadBalancing.pdf), GPU Pro 7 (2016)  |
-| ![a](../imgs/b_gpuPro5.jpg)  | Takahiro Harada, [Rendering Vector Displacement Mapped Surfaces in a GPU Ray Tracer](./publications/GPUPro6_GPUVectorDisplacement.pdf), GPU Pro 6 (2015)  |
+| ![a](../imgs/b_gpuPro5.jpg)  | Takahiro Harada, [Rendering Vector Displacement Mapped Surfaces in a GPU Ray Tracer](./publications/GPUPro6_GPUVectorDisplacement.pdf), GPU Pro 6 (2015)[summary](https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/Rendering%20Vector%20Displacement%20Mapped%20Surfaces%20in%20a%20GPU%20Ray%20Tracer.md)  |
 | ![a](../imgs/b_gpuPro5.jpg) | Takahiro Harada, Two-Level Constraint Solver and Pipelined Local Batching for Rigid Body Simulation on GPUs, GPU Pro 5 (2014)|
 | ![a](../imgs/b_gpuPro4.jpg) | Takahiro Harada, Jay McKee, Jason C. Yang, Forward+: A Step Toward Film-style Shading in Real Time, GPU Pro 4 (2013)|
 | ![a](../imgs/b_rigidBodyPhysicsSimulation.jpg) | 原田隆宏，松生裕史，ゲーム制作者のための物理シミュレーション 剛体編，インプレスジャパン(2012)|
