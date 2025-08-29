@@ -24,7 +24,7 @@ Unstructured Volumetric Data**,
   - Mehmet Oguz Derin, Takahiro Harada
   - SIGGRAPH ASIA 2024 Posters (2024) [[ACM](https://dl.acm.org/doi/10.1145/3681756.3697979)]
 
-- <img align="right" width="64" src="./imgs/hiprt_pbrt.jpg"/> **HIPRT: A Ray Tracing Framework in HIP**,
+- <img align="right" width="64" src="./imgs/hiprt_pbrt.jpg"/> [**HIPRT: A Ray Tracing Framework in HIP**](./hiprt),
   - Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada
   - High Performance Graphics (2024)
 
