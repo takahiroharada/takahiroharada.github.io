@@ -40,7 +40,7 @@ Unstructured Volumetric Data**,
   - Shin Fujieda, Atsushi Yoshimura, Takahiro Harada,
   - Pacific Graphics Short Papers and Posters (2023) [[Arxiv](https://arxiv.org/abs/2309.15101)][[EG](https://diglib.eg.org/handle/10.2312/pg20231273)]
 
-- <img align="right" width="64" src="./imgs/nif.jpg"/> **Neural Intersection Function**,
+- <img align="right" width="64" src="./imgs/nif.jpg"/> [**Neural Intersection Function**](./nif/),
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada,
   - High-Performance Graphics - Symposium Papers, 43-53 (2023) [[Arxiv](https://arxiv.org/abs/2306.07191)][[EG](https://diglib.eg.org/handle/10.2312/hpg20231135)][:film_strip:](https://www.youtube.com/live/fFvyG_dLfmA?si=ySU85jyIrqr6qrqo&t=10470)
 
@@ -77,7 +77,7 @@ Unstructured Volumetric Data**,
   - Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, 
   - SIGGRAPH 2022 Posters (2022)
 
-- <img align="right" width="64" src="./imgs/slc.jpg"/> **Stochastic Light Culling for Single Scattering in Participating Media**
+- <img align="right" width="64" src="./imgs/slc.jpg"/> [**Stochastic Light Culling for Single Scattering in Participating Media**](./vslc/)
   - Shin Fujieda, Yusuke Tokuyoshi, Takahiro Harada, 
   - Eurographics 2022 Short Papers (2022) [[PDF](https://gpuopen.com/download/publications/EG22_VolumeSlc.pdf)]
 
