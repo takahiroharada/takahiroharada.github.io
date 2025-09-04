@@ -6,82 +6,111 @@ permalink: /lpe/
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
 
-# Local Positional Encoding for Multi-Layer Perceptrons
+# Local Positional Encoding for Multi‑Layer Perceptrons
 
-**Paper:** *Local Positional Encoding for Multi‑Layer Perceptrons* – Fujieda, Yoshimura, Harada (Eurographics 2023)  
+## Overview
+The paper addresses the problem of representing high‑frequency signals (e.g., detailed textures, fine geometry) with compact neural networks, specifically Multi‑Layer Perceptrons (MLPs). Conventional input encodings—**positional (Fourier) encoding** and **grid‑based encoding**—either require a large number of network parameters or a high‑resolution grid that consumes substantial memory. The authors propose **Local Positional Encoding (LPE)**, a hybrid that stores per‑cell modulation weights (latent coefficients) for each sinusoidal basis of positional encoding on a low‑resolution uniform grid. By learning these coefficients jointly with the MLP weights, a small MLP can accurately reconstruct high‑frequency signals while keeping the memory footprint modest.
 
----
+## Main Contributions
+1. **Local Positional Encoding (LPE) formulation**  
+   - A uniform 3‑D (or 2‑D) grid of resolution $N$ stores *latent coefficients* $\{c_{k}^{(i)}\}$ for each sinusoidal component of the positional encoding.  
+   - For an input coordinate $\mathbf{x}\in\mathbb{R}^{d}$ the encoding is
 
-### 1. Problem & Motivation
-- **Implicit neural representations** (e.g., NeRF, SDFs) need to encode high‑frequency detail.
-- **Standard positional (Fourier) encoding** lets a small MLP learn high‑frequency signals, but it suffers from spectral bias and requires many sinusoidal bases → large memory.
-- **Grid‑based (hash) encodings** store learned features in a spatial grid and use a tiny MLP as a decoder, but they need multiple resolution levels or huge hash tables to capture fine detail, which becomes memory‑intensive in higher dimensions.
+$$
+\mathbf{z}(\mathbf{x}) = \big[,c_{1}^{(1)}\sin(2\pi f_{1}\mathbf{x}),;c_{1}^{(2)}\cos(2\pi f_{1}\mathbf{x}),;\dots,;c_{K}^{(1)}\sin(2\pi f_{K}\mathbf{x}),;c_{K}^{(2)}\cos(2\pi f_{K}\mathbf{x}),\big],
+$$
 
-**Goal:** Design an input encoding that lets a *single‑level, low‑resolution grid* and a *small MLP* represent high‑frequency signals with a modest memory footprint.
+   where $f_{k}$ are the frequencies of the Fourier features and $K$ is the number of frequency bands.  
+   - The coefficients are indexed by the grid cell containing $\mathbf{x}$; linear interpolation of the coefficients at the eight (or $2^{d}$) neighboring vertices yields a smooth spatial modulation.
 
----
+2. **Joint optimization of latent coefficients and MLP parameters**  
+   - The loss $\mathcal{L}$ (e.g., pixel‑wise L2 for images, signed‑distance loss for SDFs) is minimized w.r.t. both the MLP weights $\theta$ and the latent coefficients $\{c_{k}^{(i)}\}$ using Adam:
 
-### 2. Core Idea – Local Positional Encoding (LPE)
+$$
+\theta^*,\{c^*\}= \arg\min_{\theta,\{c\}} \mathcal{L}\big(\mathrm{MLP}_{\theta}(\mathbf{z}(\mathbf{x})),; y\big).
+$$
 
-| Component | Traditional approach | LPE |
-|-----------|----------------------|-----|
-| **Positional encoding** | Fixed sinusoidal amplitudes (same everywhere) | **Latent coefficients** (weights) per sinusoid stored in a grid cell |
-| **Grid** | Stores raw feature vectors (high‑dimensional) → large memory | Stores **scalar coefficients** that modulate the amplitude of each Fourier basis locally |
-| **Learning** | Only MLP weights are trained | Both MLP weights **and** grid‑cell coefficients are optimized jointly by SGD |
+3. **Empirical validation on two tasks**  
+   - **2‑D image reconstruction**: LPE achieves higher PSNR/SSIM than pure positional encoding and outperforms grid‑based encoding with far fewer parameters.  
+   - **3‑D Signed Distance Functions (SDFs)**: LPE captures fine geometric details (e.g., surface ripples) that grid encoding misses, while converging faster in early training stages.
 
-**How it works**
+4. **Comparison with state‑of‑the‑art multi‑resolution encodings**  
+   - When matched for total parameter count, a single‑level LPE attains visual quality comparable to multi‑resolution hash encodings and surpasses single‑level multi‑resolution grids, despite using far less memory.
 
-1. **Uniform grid** (e.g., $N^d$ cells) is overlaid on the input domain.
-2. For each input coordinate $\mathbf{x}$ we:
-   - Locate the containing cell and retrieve its **latent coefficients** $\{c_k\}$ (one per Fourier frequency).
-   - Compute the usual Fourier features $\phi_k(\mathbf{x}) = \sin(2\pi f_k \mathbf{x})$ / $\cos(\cdot)$.
-   - Multiply each feature by its local coefficient: $\tilde{\phi}_k(\mathbf{x}) = c_k \, \phi_k(\mathbf{x})$.
-3. Concatenate the modulated features and feed them to a **tiny MLP** (e.g., 3 layers, 64 neurons per layer).
-4. During training, gradients flow back to both the MLP parameters and the per‑cell coefficients, allowing the network to **adapt the amplitude of each frequency locally**—akin to a short‑time Fourier transform.
+## Technical Details
 
-The scheme can be seen as a **spatially‑adaptive Fourier feature map**: high‑frequency components are amplified only where needed, while low‑frequency regions keep coefficients small, reducing spectral bias.
+### Positional (Fourier) Encoding
+Standard Fourier features map a low‑dimensional input $\mathbf{x}$ to
 
----
+$$
+\gamma(\mathbf{x}) = \big[\sin(2\pi \mathbf{B}\mathbf{x}),\; \cos(2\pi \mathbf{B}\mathbf{x})\big],
+$$
 
-### 3. Technical Details
+where $\mathbf{B}\in\mathbb{R}^{K\times d}$ contains frequencies (often sampled from a Gaussian). This enables MLPs to learn high‑frequency functions but suffers from spectral bias and axis‑aligned artifacts.
 
-- **Positional encoding**: $ \phi(\mathbf{x}) = [\sin(2\pi f_i \mathbf{x}), \cos(2\pi f_i \mathbf{x})]_{i=1}^{M}$.  
-- **Latent coefficients**: For each grid cell and each input dimension a vector $\mathbf{c}\in\mathbb{R}^{2M}$ is stored (one scalar per sinusoid).  
-- **Training**: Adam optimizer, learning rate schedule as in Instant‑NGP; coefficients are updated jointly with MLP weights.  
-- **Boundary handling**: Linear interpolation of coefficients from the eight (or $2^d$) neighboring cells to avoid discontinuities.  
-- **Memory**: Roughly $N^d \times 2M \times d$ scalars; far less than storing full‑dimensional feature vectors for each cell (as in hash‑grid methods).
+### Grid‑Based Encoding
+A uniform grid of resolution $N$ stores a feature vector $\mathbf{g}_{\mathbf{v}}$ per voxel $\mathbf{v}$. The input is encoded by trilinear interpolation of the neighboring voxel features
 
----
+$$
+\mathbf{z}_{\text{grid}}(\mathbf{x}) = \sum_{\mathbf{v}\in\mathcal{N}(\mathbf{x})} w_{\mathbf{v}}(\mathbf{x})\,\mathbf{g}_{\mathbf{v}},
+$$
 
-### 4. Experiments & Results
+where $w_{\mathbf{v}}$ are interpolation weights. High‑frequency detail requires large $N$, leading to high memory usage.
 
-| Task | Baselines | Metric | LPE (single‑level grid) | Observations |
-|------|-----------|--------|--------------------------|--------------|
-| **2‑D image reconstruction** (1024×1024) | Positional (PE), Grid (GE) | PSNR, SSIM | **Higher PSNR/SSIM** (e.g., Bridge: 31.2 dB vs 30.1 dB) | Captures fine texture with a 64‑cell grid; visual artifacts are axis‑aligned (inherited from PE). |
-| **3‑D Signed Distance Functions** (SDF) | PE, GE, Multi‑resolution Grid, Multi‑resolution Hash | IoU (intersection‑over‑union) | **IoU 0.9736** (single‑level) vs 0.9702 (multi‑grid) and 0.9848 (hash) | LPE reproduces high‑frequency surface details (e.g., statue’s hair) earlier in training; converges faster than GE. |
-| **Training speed** | GE | – | **~2× faster early convergence** (64–1 024 iterations) | Because local coefficients quickly shape the spectrum. |
+### Local Positional Encoding (LPE)
+LPE combines the two ideas:
 
-*Qualitative* figures show that LPE preserves high‑frequency texture (e.g., wood grain, statue wrinkles) that GE blurs out, while using far fewer parameters than multi‑resolution hash tables.
+1. **Spatial decomposition**: The domain is partitioned into grid cells $\mathcal{C}$.  
+2. **Per‑cell modulation**: For each cell $c\in\mathcal{C}$ and each frequency band $k$, a pair of latent coefficients $(a_{c,k}^{\sin}, a_{c,k}^{\cos})$ modulates the sinusoidal basis:
 
----
+$$
+\tilde{\gamma}_{c}(\mathbf{x}) = \big[ a_{c,1}^{\sin}\sin(2\pi f_{1}\mathbf{x}),\; a_{c,1}^{\cos}\cos(2\pi f_{1}\mathbf{x}),\dots \big].
+$$
 
-### 5. Significance & Contributions
+3. **Interpolation of coefficients**: The coefficients for a query point $\mathbf{x}$ are obtained by trilinear interpolation of the eight surrounding cell coefficients, yielding a smooth spatially varying amplitude
 
-1. **Hybrid encoding** that merges the spectral richness of Fourier features with the spatial locality of grid‑based primitives.
-2. **Memory‑efficient**: a single low‑resolution grid + a tiny MLP can rival multi‑resolution hash encodings that need millions of entries.
-3. **Training efficiency**: local amplitude control yields rapid early‑stage learning of fine details.
-4. **General applicability**: demonstrated on both 2‑D image fitting and 3‑D SDF reconstruction; the method is agnostic to the downstream task (could be extended to radiance fields, material models, etc.).
+$$
+\mathbf{a}(\mathbf{x}) = \sum_{c\in\mathcal{N}(\mathbf{x})} w_{c}(\mathbf{x})\,\mathbf{a}_{c}.
+$$
 
----
+4. **Final encoding**: The modulated Fourier features are
 
-### 6. Limitations & Future Work
+$$
+\mathbf{z}_{\text{LPE}}(\mathbf{x}) = \mathbf{a}(\mathbf{x}) \odot \gamma(\mathbf{x}),
+$$
 
-- **Axis‑aligned artifacts** remain due to the underlying sinusoidal basis; possible remedies include rotating bases or using learned, non‑axis‑aligned frequencies.
-- **Scalability to high‑dimensional inputs** (e.g., 5‑D light fields) increases memory linearly with dimension; compressing coefficient storage (e.g., low‑rank factorization) is an open direction.
-- **Multi‑resolution extension**: the authors note that stacking several LPE grids (coarse‑to‑fine) should further improve quality and is a natural next step.
+where $\odot$ denotes element‑wise multiplication.
 
----
+### Network Architecture
+A compact MLP with three hidden layers (64 neurons each) processes $\mathbf{z}_{\text{LPE}}(\mathbf{x})$. For image reconstruction a leaky‑ReLU activation is used; for SDFs a signed‑distance output head with a final tanh activation is employed.
 
-### 7. Bottom‑Line Takeaway
+### Training
+Both the MLP weights $\theta$ and the latent coefficients $\{\mathbf{a}_{c}\}$ are optimized jointly using Adam with learning rates $\eta_{\theta}=10^{-3}$ and $\eta_{a}=10^{-2}$. The loss for image reconstruction is
 
-*Local Positional Encoding* provides a **simple yet powerful** way to endow a compact MLP with the ability to model high‑frequency signals while keeping the memory budget low. By learning per‑cell amplitude weights for Fourier features, the method adapts to spatially varying detail, achieving results comparable to state‑of‑the‑art multi‑resolution hash encodings but with a single‑level grid and a much smaller network. This makes it attractive for real‑time or resource‑constrained neural graphics applications.
+$$
+\mathcal{L}_{\text{img}} = \frac{1}{|\Omega|}\sum_{\mathbf{x}\in\Omega}\big\| \mathrm{MLP}_{\theta}(\mathbf{z}_{\text{LPE}}(\mathbf{x})) - I(\mathbf{x})\big\|_{2}^{2},
+$$
+
+and for SDFs
+
+$$
+\mathcal{L}_{\text{SDF}} = \frac{1}{|\Omega|}\sum_{\mathbf{x}\in\Omega}\big| \mathrm{MLP}_{\theta}(\mathbf{z}_{\text{LPE}}(\mathbf{x})) - \phi_{\text{gt}}(\mathbf{x})\big|,
+$$
+
+where $\phi_{\text{gt}}$ is the ground‑truth signed distance.
+
+## Limitations
+- **Axis‑aligned artifacts**: Because the underlying Fourier basis is aligned with the coordinate axes, LPE inherits the same grid‑like ringing artifacts, especially noticeable on smooth surfaces.
+- **Memory scaling with dimensionality**: The number of latent coefficients grows linearly with the input dimension $d$. For high‑dimensional tasks (e.g., 5‑D radiance fields) the memory cost becomes significant.
+- **Single‑resolution grid**: The current implementation uses a single low‑resolution grid; while competitive, it does not fully exploit the benefits of multi‑resolution hierarchies.
+- **Hash collisions**: Although LPE avoids hash‑based collisions, extending it to multi‑resolution hash grids may re‑introduce such artifacts unless carefully managed.
+
+## Conclusion
+The authors present **Local Positional Encoding**, a novel hybrid encoding that equips a small MLP with the ability to learn high‑frequency functions while keeping memory usage low. By learning per‑cell amplitude modulation of Fourier features, LPE adapts to spatially varying signal content, leading to superior visual fidelity in both 2‑D image reconstruction and 3‑D SDF modeling. Empirical results demonstrate faster early‑stage convergence compared to pure grid encodings and comparable performance to state‑of‑the‑art multi‑resolution hash encodings, despite using a single‑level grid.
+
+## Future Directions
+1. **Mitigating axis‑aligned artifacts** – Investigate alternative basis functions (e.g., learned directional Fourier bases or spherical harmonics) to reduce ringing.
+2. **Multi‑resolution extension** – Incorporate a hierarchy of grids (or hash tables) into LPE, enabling finer detail capture without excessive memory.
+3. **Coefficient compression** – Explore low‑rank factorization or quantization of the latent coefficients to further reduce memory for high‑dimensional inputs.
+4. **Application to neural radiance fields** – Integrate LPE into NeRF‑style view synthesis pipelines, potentially replacing or augmenting existing hash‑based encodings.
+5. **Adaptive frequency selection** – Dynamically adjust the set of frequencies $\{f_{k}\}$ per cell based on local signal complexity, akin to adaptive Fourier feature selection.
