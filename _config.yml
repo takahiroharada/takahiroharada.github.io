@@ -42,12 +42,7 @@ minima:
     github: takahiroharada
     linkedin: takahiroharada
 
-markdown: kramdown
-kramdown:
-  input: GFM          # use GitHub‑flavored Markdown syntax
-  math_engine: mathjax
-  math_engine_opts:
-    preview: true    # show a tiny LaTeX preview while MathJax loads
+markdown: GFM
     
 # Exclude from processing.
 # The following items will not be processed, by default.
