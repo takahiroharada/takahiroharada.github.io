@@ -25,6 +25,7 @@ permalink: /LSNIF/
 - **Encoding:** Multi‑resolution hash‑grid positional encoding (Müller et al. 2022) is used to compress the voxel‑level geometry into a low‑dimensional feature vector, which is fed to the MLP.
 
 ### 3. Methodology
+
 | Component | Details |
 |-----------|---------|
 | **Voxelization** | Uniform grid of resolution *V* (e.g., 64³). Occupancy stored as a binary 3‑D texture. |
@@ -45,6 +46,7 @@ permalink: /LSNIF/
   - DirectX Ray‑Tracing (DXR) integration works but incurs divergence overhead; future work targets Work‑Graph API for batch inference.  
 
 ### 5. Limitations
+
 | Issue                                 | Why it matters                                                                         | Current handling                                              |
 | ------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | **Topological changes / deformation** | Network encodes a fixed surface.                                                       | Requires retraining.                                          |
