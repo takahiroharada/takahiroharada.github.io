@@ -7,129 +7,82 @@ permalink: /nif/
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
 
 
-# Neural Intersection Function
+# Neural Intersection Function  
 
-**Paper:** *Neural Intersection Function (NIF) – Accelerating Ray‑Casting with Neural Networks*  
-**Authors:** S. Fujieda, C. C. Kao, T. Harada (2023)
+## Overview  
+The paper introduces **Neural Intersection Function (NIF)**, a novel neural‑based approach to accelerate ray casting in physically‑based rendering.  
+Instead of traversing the bottom‑level Bounding Volume Hierarchy (BVH) for each shadow‑ray query, NIF replaces this step with two lightweight multilayer perceptrons (MLPs) that predict ray–object intersections directly from a compact, alias‑free encoding of the ray parameters.  
+The method is implemented on AMD GPU hardware using the HIP programming model and can be seamlessly integrated into existing rasterisation‑or‑ray‑tracing pipelines.
 
----
-
-## 1. Problem & Motivation
-- **Ray‑tracing** (especially shadow‑ray casting) spends a large fraction of its time traversing the **bottom‑level BVH** (BL‑BVH).  
-- BL‑BVH traversal is highly divergent on GPUs: many threads follow different branches, leading to poor memory‑coherence and low utilization of the GPU’s massive parallelism.  
-- Recent work has shown that **neural networks (NNs)** can represent geometry implicitly, but they have been used only as *stand‑alone* renderers or for a single object, not as a drop‑in replacement inside a conventional ray‑tracing pipeline.
-
-**Goal:** Replace the BL‑BVH traversal with a learned function that can be embedded in an existing BVH‑based renderer, preserving the rest of the pipeline (top‑level BVH, shading, etc.) while gaining speed.
-
----
-
-## 2. Core Idea – Neural Intersection Function (NIF)
-
-NIF consists of **two small MLPs**:
-
-| Network | Purpose | Input (parameterization) |
-|---------|---------|--------------------------|
-| **Outer** | Coarse “does this ray intersect any object at all?” (visibility) | 3‑D ray‑origin, ray‑direction, and a *grid‑encoded* feature vector (position, direction, distance) |
-| **Inner** | Fine‑grained “where does the ray intersect the first object?” (distance) | Same grid‑encoded features + the output of the outer network (visibility) |
-
-Both networks share a **grid‑encoding** of the ray parameters (position, direction, distance) that eliminates aliasing caused by discretisation of the view‑space. The encoding is a set of **learned feature grids** (similar to the “feature‑grid” used in recent implicit‑function works) that map continuous ray parameters to high‑dimensional vectors before feeding them to the MLPs.
-
-### Training Pipeline
-1. **Data collection:** While rendering a frame from a given camera, a small number of *shadow rays* (or any secondary rays) are generated. Their true intersection results (visibility, distance) are obtained by the standard BVH traversal.
-2. **Online / offline training:** The collected ray‑intersection pairs are used to train the outer and inner networks on‑the‑fly (online) or offline.  
-   - Losses: binary cross‑entropy for visibility (outer) and L1/L2 for distance (inner).  
-   - Optimizer: Adam, Xavier/Glorot initialization.
-3. **Inference:** At subsequent frames (or the same frame with more samples) the trained NIF replaces the BL‑BVH traversal for those rays.
-
-### Integration
-- NIF is **optional**: it is invoked only for objects whose triangle count exceeds a threshold (e.g., > 100 K). Simpler geometry still uses the classic BVH.
-- The rest of the rendering pipeline (top‑level BVH, shading, material evaluation, primary‑ray rasterisation) remains unchanged.
-
----
-
-## 3. Technical Contributions
+## Main Contributions  
 
 | Contribution | Description |
 |--------------|-------------|
-| **Two‑stage neural architecture** (outer + inner) that splits the problem into a cheap visibility test and a more expensive distance regression only when needed. |
-| **Grid‑encoding of ray parameters** (position, direction, distance) that removes aliasing and provides a smooth, high‑frequency representation for the MLPs. |
-| **Single shared network for the whole scene** (instead of per‑object networks). The same outer/inner networks handle all objects, using the same feature grids. |
-| **GPU‑native implementation** using AMD’s HIP (v4.5) and leveraging wave‑level matrix‑multiply instructions (RDNA‑3). |
-| **Online training** that can be performed in a few hundred milliseconds per sample‑per‑pixel (spp). |
+| **Two‑stage neural architecture** | NIF consists of an **outer network** that quickly discards rays that miss the object’s axis‑aligned bounding box (AABB) and an **inner network** that refines the decision for rays that intersect the AABB. The outer network processes a large number of rays, while the inner network handles the far fewer rays that actually intersect the geometry. |
+| **Grid‑based feature encoding** | To avoid aliasing caused by discretisation of ray parameters, the authors encode each ray’s origin, direction, and distance into a **feature grid**. For a ray $\mathbf{r}(t)=\mathbf{o}+t\mathbf{d}$ intersecting an AABB $[ \mathbf{b}_{\min},\mathbf{b}_{\max}]$, the normalized entry/exit distances are $\tau_{\text{in}} = \frac{t_{\text{in}}-t_{\text{near}}}{t_{\text{far}}-t_{\text{near}}}$ and $\tau_{\text{out}} = \frac{t_{\text{out}}-t_{\text{near}}}{t_{\text{far}}-t_{\text{near}}}$. These scalars are then lifted into a high‑dimensional vector via a **trilinear interpolation** over a 3‑D grid: $\mathbf{g} = \sum_{i,j,k} w_{ijk} \mathbf{c}_{ijk}$, where $\mathbf{c}_{ijk}$ are learnable code vectors stored at grid vertices and $w_{ijk}$ are the interpolation weights. |
+| **Shared‑object training** | A **single shared MLP** is trained for the whole scene rather than per‑object networks. The outer network learns a binary visibility function $V_{\text{out}}(\mathbf{g})\in[0,1]$ indicating whether a ray hits any object’s AABB. The inner network learns a refined visibility $V_{\text{in}}(\mathbf{g})$ that approximates the true BVH intersection result. |
+| **Online, viewpoint‑dependent training** | During rendering, NIF is trained **on‑the‑fly** using only the rays that are actually cast from the current camera and light configuration. The loss is a binary cross‑entropy between the network’s prediction and the ground‑truth BVH result: $\mathcal{L}= -\big(y\log\hat{y}+(1-y)\log(1-\hat{y})\big)$. |
+| **Integration with existing pipelines** | NIF can be toggled per‑object: complex meshes (≥ 100 k triangles) are processed by NIF, while simple meshes continue to use conventional BVH traversal. This hybrid approach yields up to **1.53× speed‑up** on highly detailed scenes without perceptible visual degradation (PSNR ≈ 30 dB). |
 
----
+## Technical Details  
 
-## 4. Experimental Results
+1. **Ray Parameterisation**  
+   For a ray $\mathbf{r}(t)=\mathbf{o}+t\mathbf{d}$ intersecting an AABB, the entry/exit distances are computed analytically:
+   
+$$
+t_{\text{in}} = \max_{i\in\{x,y,z\}} \frac{b_{\min,i} - o_i}{d_i},\qquad
+t_{\text{out}} = \min_{i\in\{x,y,z\}} \frac{b_{\max,i} - o_i}{d_i}.
+$$  
 
-| Scene (triangles) | BVH Ray‑cast time (µs) | NIF Ray‑cast time (µs) | Speed‑up | PSNR / Image quality |
-|-------------------|------------------------|------------------------|----------|----------------------|
-| DRAGON A (7.2 M)  | 625.3 | 139.5 | **1.24×** | Δ≈0.1 dB |
-| CENTAUR A (2.5 M) | 592.0 | 123.4 | **1.46×** | Δ≈0.1 dB |
-| STATUETTE (10 M)  | 391.0 | 86.2  | **1.53×** | Δ≈0.1 dB |
-| STATUETTE LOW (0.5 M) | 260.6 | 91.8 | **1.00×** (no gain) | – |
-| BISTRO (5 complex models, total ≈ 120 M) | 774.0 | 119.9 (complex part) + 260.6 (simple part) ≈ 380 µs | **~15 %** overall reduction | Δ≈0.1 dB |
+   Normalised distances $\tau_{\text{in}},\tau_{\text{out}}$ are then fed to the grid encoder.
 
-- **Linear scaling:** The NIF runtime scales linearly with the *number of rays* processed, not with the geometric complexity (triangle count). This explains why low‑poly models see no speed‑up.
-- **Image fidelity:** Shadows computed with NIF are visually indistinguishable from BVH‑based shadows (PSNR > 40 dB, Δ amplified for visual inspection still tiny).
-- **Primary‑ray use:** NIF can also output shading normals and depth, enabling primary‑ray acceleration (though this was not the primary benchmark).
+3. **Grid Encoding**  
+   The 3‑D grid has resolution $R$ (e.g., $R=64$). Each cell stores a learnable code vector $\mathbf{c}_{ijk}\in\mathbb{R}^C$. For a given $(\tau_{\text{in}},\tau_{\text{out}})$, the eight surrounding vertices are identified and the feature vector is obtained by trilinear interpolation:
+   
+$$
+\mathbf{g} = \sum_{a,b,c\in\{0,1\}} w_{abc}\,\mathbf{c}_{i+a,j+b,k+c},
+$$
+   
+   where the weights $w_{abc}$ are products of the fractional distances along each axis.
 
----
+5. **Network Architecture**  
+   Both outer and inner networks are shallow MLPs with ReLU activations:
+   
+$$
+\mathbf{h}^{(1)} = \sigma\big(\mathbf{W}^{(1)}\mathbf{g} + \mathbf{b}^{(1)}\big),\quad
+\mathbf{h}^{(2)} = \sigma\big(\mathbf{W}^{(2)}\mathbf{h}^{(1)} + \mathbf{b}^{(2)}\big),\quad
+\hat{y}= \text{sigmoid}\big(\mathbf{w}^{\top}\mathbf{h}^{(2)} + b\big).
+$$
+   
+   The outer network has $\approx 1.5$ M parameters, the inner network $\approx 0.5$ M parameters.  
 
-## 5. Limitations & Open Issues
+7. **Training Procedure**  
+   - **Data collection**: For each frame, shadow rays are generated and their true BVH intersection results $y\in\{0,1\}$ are recorded.  
+   - **Optimization**: Adam optimizer (β₁=0.9, β₂=0.999) with learning rate $10^{-3}$ is used.  
+   - **Online update**: After each pass, the network weights are updated, allowing the model to adapt to the current view and lighting configuration.  
 
-| Limitation | Reason | Potential Remedy |
-|------------|--------|------------------|
-| **View‑specific training** – NIF is trained only on rays from the current camera. Queries from far‑off viewpoints suffer accuracy loss. | Training data is limited to the current view; the learned function does not generalise far away. | *Multi‑view* or *global* training (e.g., sampling a broader set of viewpoints) or a hierarchical mixture‑of‑experts that can be switched on‑the‑fly. |
-| **Dynamic scenes** – No efficient online update scheme yet. | Current training is per‑frame, which would be too costly for moving geometry. | Incremental training / continual‑learning approaches, or a hybrid where only the *inner* network is updated for deformations. |
-| **Redundant queries** – Same ray may be evaluated multiple times if an intersection is already known. | Simple kernel design does not cache intermediate results. | Ray‑level caching or early‑exit logic (adds kernel complexity; benefit currently marginal). |
-| **Only secondary‑ray visibility** – Primary‑ray shading, deeper shadow‑ray paths, or other ray types not yet explored. | Focused on the most expensive part (BL‑BVH). | Extend the inner network to output additional geometric descriptors (e.g., SDF, curvature) and test on full path‑tracing workloads. |
+8. **Inference**  
+   During rendering, a ray first passes through the **outer grid** (feature extraction) and **outer inference** (binary decision). If the outer network predicts a miss, the ray is discarded. If it predicts a hit, the ray is forwarded to the **inner network** for a refined decision.  
 
----
+## Limitations  
 
-## 6. Conclusions
+| Limitation | Impact |
+|------------|--------|
+| **View‑dependent training** | NIF is trained only on rays emanating from the current camera. Queries from significantly different viewpoints suffer reduced accuracy, requiring re‑training. |
+| **Static‑scene assumption** | The current online training pipeline cannot handle dynamic geometry efficiently; any change in mesh topology forces a full re‑training. |
+| **Model‑complexity dependence** | Speed‑up is proportional to the number of triangles in the processed object. For low‑complexity meshes (≤ 100 k triangles) the overhead of grid encoding and inference outweighs BVH traversal, yielding no net gain. |
+| **Redundant ray evaluations** | The current implementation may query the same ray multiple times if multiple objects are processed sequentially, leading to unnecessary compute. |
+| **Limited to binary visibility** | The presented NIF predicts only shadow‑ray visibility. Extending to encode shading normals, depth, or higher‑order light transport (e.g., indirect illumination) requires additional output heads and training data. |
 
-- **NIF** demonstrates that a *learned* intersection function can replace the costly bottom‑level BVH traversal for complex geometry, yielding up to **1.53×** speed‑up while preserving visual quality.
-- The approach is **compatible** with existing GPU ray‑tracing pipelines: you can selectively enable NIF for high‑poly objects and fall back to classic BVH for the rest.
-- As GPU hardware continues to accelerate matrix‑multiply/ML workloads (tensor cores, wave‑level instructions), the relative advantage of NIF is expected to **grow**.
+## Conclusion  
 
----
+The authors demonstrate that a **learned neural intersection function** can replace the costly bottom‑level BVH traversal for complex geometry, achieving up to **1.53×** faster ray casting while preserving visual fidelity (PSNR ≈ 30 dB). By sharing a single MLP across all objects and employing a high‑resolution grid encoding, NIF mitigates aliasing artifacts and provides a compact representation (≈ 2 MB per scene). The method integrates cleanly into existing GPU‑based ray‑tracing pipelines, offering a hybrid solution where only the most divergent workloads are off‑loaded to the neural predictor.
 
-## 7. Take‑away for Practitioners
+## Future Directions  
 
-| When to use NIF | How to integrate |
-|-----------------|------------------|
-| **High‑poly models** (≥ 100 K triangles) where BL‑BVH traversal dominates. | Replace the BL‑BVH traversal kernel with the NIF outer/inner inference kernels; keep the TL‑BVH unchanged. |
-| **Static scenes** or scenes where the camera does not move dramatically between frames. | Train NIF once (or a few times) per view; reuse the trained weights for many frames. |
-| **Dynamic or highly view‑varying scenes** | Not yet ready; consider hybrid approaches (partial NIF, frequent re‑training) or wait for future work. |
-
----
-
-### Quick Pseudocode (high‑level)
-
-```cpp
-// Pre‑render: collect training rays from current view
-for each shadowRay r:
-    hit = BVH_RayCast(r);               // ground‑truth
-    store (r.origin, r.dir, hit.visible, hit.dist);
-
-// Train outer/inner networks (online or offline)
-train_outer_network(training_data);
-train_inner_network(training_data);
-
-// Render loop
-for each shadowRay r:
-    // 1️⃣ Outer query (visibility)
-    feat = grid_encode(r.origin, r.dir, /*distance=*/0);
-    visible = outer_MLP(feat);
-    if (!visible) continue; // early out: no occluder
-
-    // 2️⃣ Inner query (distance)
-    feat = grid_encode(r.origin, r.dir, /*estimated distance*/);
-    dist = inner_MLP(feat);
-    // Use `dist` to compute shadow attenuation, etc.
-```
-
----
-
-**Bottom line:** NIF shows that a compact neural representation can serve as a *drop‑in* accelerator for the most divergent part of GPU ray‑tracing pipelines. It opens a new research direction: **embedding learned geometry functions directly inside production renderers**. Future work will need to address view‑generalisation, dynamic updates, and richer geometric outputs.
+1. **View‑agnostic training** – Incorporate multi‑view ray samples (e.g., via importance sampling over the hemisphere) to build a viewpoint‑independent NIF, reducing the need for frequent re‑training.  
+2. **Dynamic‑scene support** – Develop incremental update schemes (e.g., continual learning or meta‑learning) that adapt the latent grid codes as geometry deforms, avoiding full retraining.  
+3. **Extended ray semantics** – Augment the inner network to output additional geometric attributes (surface normal, depth, material ID) enabling NIF to replace primary‑ray intersection as well.  
+4. **Redundancy elimination** – Cache successful intersection results per‑pixel or per‑tile to avoid re‑evaluating the same ray across multiple objects.  
+5. **Hardware‑aware optimisation** – Exploit upcoming GPU tensor cores and sparsity‑aware kernels to further accelerate the grid‑to‑MLP pipeline, potentially surpassing the current 1.5× speed‑up.  
 
