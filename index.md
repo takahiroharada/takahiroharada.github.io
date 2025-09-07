@@ -69,7 +69,7 @@ Unstructured Volumetric Data**,
   - Paritosh Kulkarni, Sho Ikeda, Takahiro Harada,
   - ACM SIGGRAPH ASIA Posters (2022) [[PDF]()], [[AMD Technical Report, No. 22-10-b79d](https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf)]
 
-- <img align="right" width="64" src="./imgs/gi1.jpg"/> **GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination**
+- <img align="right" width="64" src="./imgs/gi1.jpg"/> [**GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination**](./gi-1.0/)
   - Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada, 
   - AMD Technical Report, No.  22-10-9831, October 18 (2022) [[PDF](https://gpuopen.com/download/publications/GPUOpen2022_GI1_0.pdf)]
 
