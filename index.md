@@ -15,7 +15,7 @@ layout: home
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada
   - Proceedings of the ACM on Computer Graphics and Interactive Techniques, Volume 8, Issue 1 Article No.: 17, Pages 1 - 18 (2025), [[PDF](https://arxiv.org/abs/2504.21627)] [[ACM](https://dl.acm.org/doi/10.1145/3728295)] [[Slide](https://www.slideshare.net/slideshow/lsnif-locally-subdivided-neural-intersection-function/280097631)][[Video](https://www.youtube.com/watch?v=mdnwIKu1llo)]
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **Nature Visible Only Digitally**,
+- <img align="right" width="64" src="./imgs/nvod.jpg"/> **Nature Visible Only Digitally**,
   - Yasuhiro Iba, Aya Kubota, Yusuke Takeda, Mehmet Oguz Derin, Shin Ikegami, Jörg Mutterlose, Takahiro Harada, Tomonori Takeuchi, Kazuki Tainaka
   - Patterns, Volume 6, Issue 4, 101210 (2025) [[HTML](https://www.cell.com/patterns/fulltext/S2666-3899(25)00058-3)]
 
