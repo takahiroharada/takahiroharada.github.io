@@ -7,7 +7,7 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **Geometric Integration for Neural Control Variates**,
+- <img align="right" width="64" src="./imgs/ncv.jpg"/> **Geometric Integration for Neural Control Variates**,
   - Daniel Meister, Takahiro Harada
   - Pacific Graphics (2025)
 
