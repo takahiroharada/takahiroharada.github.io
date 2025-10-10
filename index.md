@@ -9,7 +9,7 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/ncv.jpg"/> **Geometric Integration for Neural Control Variates**,
   - Daniel Meister, Takahiro Harada
-  - Pacific Graphics (2025) [[Arxiv](https://arxiv.org/abs/2509.15538)]
+  - Pacific Graphics (2025) [[EG](https://diglib.eg.org/items/f488d50a-88a3-46de-8b74-22b790583a28)] [[Arxiv](https://arxiv.org/abs/2509.15538)]
 
 - <img align="right" width="64" src="./imgs/lsnif.jpg"/> [**LSNIF: Locally-Subdivided Neural Intersection Function**](./LSNIF/),
   - Shin Fujieda, Chih-Chen Kao, Takahiro Harada
