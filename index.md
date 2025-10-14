@@ -97,7 +97,9 @@ Unstructured Volumetric Data**,
   - Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba, 
   - SIGGRAPH Asia 2021 Technical Communications, Article No. 19, Pages 1–4 (2021) [[PDF](https://gpuopen.com/download/publications/SA2021_BlockWalk.pdf)][[ACM](https://dl.acm.org/doi/abs/10.1145/3478512.3488608)]
 
-- 原田隆宏, フレッシュマンに向けたプログラミングのススメ：9．これから世界を視野に入れて働くエンジニアへ, 会誌「情報処理」, Vol.60, No.6(2019) [[LINK](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=195582&item_no=1&page_id=13&block_id=8)]
+- フレッシュマンに向けたプログラミングのススメ：9．これから世界を視野に入れて働くエンジニアへ,
+  - 原田隆宏
+  - 会誌「情報処理」, Vol.60, No.6(2019) [[LINK](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=195582&item_no=1&page_id=13&block_id=8)]
 
 - Yusuke Tokuyoshi and Takahiro Harada, Hierarchical Russian Roulette for Vertex Connections, ACM Transactions on Graphics 38, 4, 36 (2019)
 - Yusuke Tokuyoshi and Takahiro Harada, Bidirectional Path Tracing Using Backward Stochastic Light Culling, ACM SIGGRAPH 2018 Talks (2018)
