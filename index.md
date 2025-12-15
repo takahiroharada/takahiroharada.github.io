@@ -7,6 +7,10 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Fast First-Hit Determination for Large and Composite Sparse Volumetric Data Structures with Mesh Shaders**
+  - Mehmet Oguz Derin, Takahiro Harada
+  - SIGGRAPH ASIA 2025 Posters (2025) [[ACM](https://dl.acm.org/doi/10.1145/3757374.3771422)]
+
 - <img align="right" width="64" src="./imgs/ncv.jpg"/> **Geometric Integration for Neural Control Variates**,
   - Daniel Meister, Takahiro Harada
   - Pacific Graphics (2025) [[EG](https://diglib.eg.org/items/f488d50a-88a3-46de-8b74-22b790583a28)] [[Arxiv](https://arxiv.org/abs/2509.15538)]
