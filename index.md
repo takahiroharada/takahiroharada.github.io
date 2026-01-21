@@ -7,6 +7,11 @@ layout: home
 
 ## Papers
 
+
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **The oldest sepioid cephalopod from the Cretaceous discovered by Digital fossil-mining with zero-shot learning AI**
+  - Kanta Sugiura, Shin Ikegami, Yusuke Takeda, Jörg Mutterlose, Mehmet Oguz Derin, Aya Kubota, Harufumi Nishida, Kazuki Tainaka, Takahiro Harada, Neil H. Landman & Yasuhiro Iba
+  - AI. Commun Biol (2026) [[nature.com](https://doi.org/10.1038/s42003-026-09519-9)]
+
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Fast First-Hit Determination for Large and Composite Sparse Volumetric Data Structures with Mesh Shaders**
   - Mehmet Oguz Derin, Takahiro Harada
   - SIGGRAPH ASIA 2025 Posters (2025) [[ACM](https://dl.acm.org/doi/10.1145/3757374.3771422)]
