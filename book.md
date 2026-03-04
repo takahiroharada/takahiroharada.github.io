@@ -6,7 +6,7 @@ permalink: /books/
 
 
 |---|---|
-| ![](../imgs/b_gpuPro5.jpg)  | Atsushi Yoshimura, Sho Ikeda, and Takahiro Harada, Practical Unbounded Hash-Grid Encoding for Neural Radiance Caching, GPU Zen 4 (2026)  |
+| ![](../imgs/b_gpuzen4.jpg)  | Atsushi Yoshimura, Sho Ikeda, and Takahiro Harada, Practical Unbounded Hash-Grid Encoding for Neural Radiance Caching, GPU Zen 4 (2026)  |
 | ![](../imgs/b_gpuPro5.jpg)  | Takahiro Harada, [Semi-Static Load Balancing for Low Latency Ray Tracing on Heterogeneous Multiple GPUs](./publications/GPUPro7-5-4_heterogeneousLoadBalancing.pdf), GPU Pro 7 (2016)  |
 | ![a](../imgs/b_gpuPro5.jpg)  | Takahiro Harada, [Rendering Vector Displacement Mapped Surfaces in a GPU Ray Tracer](./publications/GPUPro6_GPUVectorDisplacement.pdf), GPU Pro 6 (2015) [summary](./Rendering%20Vector%20Displacement%20Mapped%20Surfaces%20in%20a%20GPU%20Ray%20Tracer/)  |
 | ![a](../imgs/b_gpuPro5.jpg) | Takahiro Harada, Two-Level Constraint Solver and Pipelined Local Batching for Rigid Body Simulation on GPUs, GPU Pro 5 (2014)|
