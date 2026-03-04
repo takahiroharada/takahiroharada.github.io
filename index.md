@@ -7,7 +7,10 @@ layout: home
 
 ## Papers
 
-
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Ray Tracing in HIP**
+  - Atsushi Yoshimura, Kenta Eto, Daniel Meister, Takahiro Harada
+  - AMD Technical Report (2026) [[arxiv](https://arxiv.org/abs/2603.00292)]
+  
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **The oldest sepioid cephalopod from the Cretaceous discovered by Digital fossil-mining with zero-shot learning AI**
   - Kanta Sugiura, Shin Ikegami, Yusuke Takeda, Jörg Mutterlose, Mehmet Oguz Derin, Aya Kubota, Harufumi Nishida, Kazuki Tainaka, Takahiro Harada, Neil H. Landman & Yasuhiro Iba
   - AI. Commun Biol (2026) [[nature.com](https://doi.org/10.1038/s42003-026-09519-9)]
