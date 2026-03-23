@@ -7,6 +7,10 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Voxel Deformation-Aware Neural Intersection Function**
+  - Chih-Chen Kao, Grzegorz Makowski, Shin Fujieda, Takahiro Harada
+  - To Appear (2026)
+ 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Ray Tracing in HIP**
   - Atsushi Yoshimura, Kenta Eto, Daniel Meister, Takahiro Harada
   - AMD Technical Report (2026) [[arxiv](https://arxiv.org/abs/2603.00292)]
