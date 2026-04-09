@@ -7,6 +7,9 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **PEPS: Positional Encoding Projected Sampling**
+  - To Appear (2026)
+
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Voxel Deformation-Aware Neural Intersection Function**
   - Chih-Chen Kao, Grzegorz Makowski, Shin Fujieda, Takahiro Harada
   - To Appear (2026)
