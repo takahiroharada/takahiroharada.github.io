@@ -7,12 +7,17 @@ layout: home
 
 ## Papers
 
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Earliest octopuses were giant top predators in Cretaceous oceans**
+  - Shin Ikegami, Jörg Mutterlose, Kanta Sugiura, Yusuke Takeda, Mehmet Oguz Derin, Aya Kubota, Kazuki Tainaka, Takahiro Harada, Harufumi Nishida, Yasuhiro Iba
+  - Science392,406-410(2026).DOI:10.1126/science.aea6285 (2026) [publishers](https://www.science.org/doi/10.1126/science.aea6285)
+
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **PEPS: Positional Encoding Projected Sampling**
-  - To Appear (2026)
+  - Guillaume Perez, Janarbek Matai, Takahiro Harada
+  - ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (2026)
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Voxel Deformation-Aware Neural Intersection Function**
   - Chih-Chen Kao, Grzegorz Makowski, Shin Fujieda, Takahiro Harada
-  - To Appear (2026)
+  - Eurographics Short Paper (2026)
  
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Ray Tracing in HIP**
   - Atsushi Yoshimura, Kenta Eto, Daniel Meister, Takahiro Harada
