@@ -9,7 +9,7 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Earliest octopuses were giant top predators in Cretaceous oceans**
   - Shin Ikegami, Jörg Mutterlose, Kanta Sugiura, Yusuke Takeda, Mehmet Oguz Derin, Aya Kubota, Kazuki Tainaka, Takahiro Harada, Harufumi Nishida, Yasuhiro Iba
-  - Science392,406-410(2026).DOI:10.1126/science.aea6285 (2026) [publishers](https://www.science.org/doi/10.1126/science.aea6285)
+  - Science392,406-410(2026).DOI:10.1126/science.aea6285 (2026) [[science.org](https://www.science.org/doi/10.1126/science.aea6285)] [[National Geographic](https://www.nationalgeographic.com/science/article/cretaceous-kraken-giant-octopus)] [[Nature](https://www.nature.com/articles/d41586-026-01342-w)]
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **PEPS: Positional Encoding Projected Sampling**
   - Guillaume Perez, Janarbek Matai, Takahiro Harada
