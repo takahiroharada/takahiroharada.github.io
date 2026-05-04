@@ -13,11 +13,11 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **PEPS: Positional Encoding Projected Sampling**
   - Guillaume Perez, Janarbek Matai, Takahiro Harada
-  - ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (2026)
+  - ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (2026) [[Arxiv Extended ver.](https://arxiv.org/abs/2604.24167)] [[ACM](https://dl.acm.org/doi/10.1145/3806062)]
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Voxel Deformation-Aware Neural Intersection Function**
   - Chih-Chen Kao, Grzegorz Makowski, Shin Fujieda, Takahiro Harada
-  - Eurographics Short Paper (2026)
+  - Eurographics Short Paper (2026) [[Arxiv](https://arxiv.org/abs/2604.24666)] [EG]
  
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Ray Tracing in HIP**
   - Atsushi Yoshimura, Kenta Eto, Daniel Meister, Takahiro Harada
