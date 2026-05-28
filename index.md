@@ -13,7 +13,7 @@ layout: home
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **PEPS: Positional Encoding Projected Sampling**
   - Guillaume Perez, Janarbek Matai, Takahiro Harada
-  - ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (2026) [[Arxiv Extended ver.](https://arxiv.org/abs/2604.24167)] [[ACM](https://dl.acm.org/doi/10.1145/3806062)]
+  - ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (2026) [[Arxiv Extended ver.](https://arxiv.org/abs/2604.24167)] [[ACM](https://dl.acm.org/doi/10.1145/3806062)][[Slide](https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/202605_PEPS_i3d.pdf)]
 
 - <img align="right" width="64" src="./imgs/icon.jpg"/> **Voxel Deformation-Aware Neural Intersection Function**
   - Chih-Chen Kao, Grzegorz Makowski, Shin Fujieda, Takahiro Harada
