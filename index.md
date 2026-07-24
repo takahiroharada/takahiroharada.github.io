@@ -7,7 +7,11 @@ layout: home
 
 ## Papers
 
-- <img align="right" width="64" src="./imgs/icon.jpg"/> **Earliest octopuses were giant top predators in Cretaceous oceans**
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Squids Radiated Globally Prior to the Cretaceous−Paleogene Mass Extinction**
+  - Shin Ikegami, Kanta Sugiura, Mehmet Oguz Derin, Yusuke Takeda, Jörg Mutterlose, Shintaro Sasaki, Neil H. Landman, Takahiro Harada, Kazuki Tainaka, Aya Kubota, Harufumi Nishida, Yasuhiro Iba
+  - Geology (2026) [[Geology](https://doi.org/10.1130/G54372.1)]
+
+- <img align="right" width="64" src="./imgs/icon.jpg"/> **Earliest Octopuses Were Giant Top Predators in Cretaceous Oceans**
   - Shin Ikegami, Jörg Mutterlose, Kanta Sugiura, Yusuke Takeda, Mehmet Oguz Derin, Aya Kubota, Kazuki Tainaka, Takahiro Harada, Harufumi Nishida, Yasuhiro Iba
   - Science392,406-410(2026).DOI:10.1126/science.aea6285 (2026) [[science.org](https://www.science.org/doi/10.1126/science.aea6285)] [[National Geographic](https://www.nationalgeographic.com/science/article/cretaceous-kraken-giant-octopus)] [[Nature](https://www.nature.com/articles/d41586-026-01342-w)]
 
