@@ -1,0 +1,497 @@
+# Publications. One entry per paper. Newest years render first automatically.
+#
+# Required : title, authors, venue, year
+# Optional : pdf / arxiv / acm  - the three most common links, as plain URLs
+#            image  - filename inside /imgs/ (defaults to icon.jpg)
+#            page   - internal project page; makes the title a link
+#            links  - anything that isn't pdf/arxiv/acm, as {label, url};
+#                     omit `url` to show the label as plain, unlinked text
+#            note   - award / trailing remark shown after the links
+#
+# - title: "An Example Paper"
+#   authors: "A. Author, B. Author"
+#   venue: "Some Conference"
+#   year: 2026
+#   pdf: "https://example.com/paper.pdf"
+#   arxiv: "https://arxiv.org/abs/0000.00000"
+#   acm: "https://dl.acm.org/doi/10.1145/0000000"
+#   links:
+#     - {label: "Code", url: "https://github.com/example"}
+#   note: "Best Paper Award"
+
+- title: "Squids Radiated Globally Prior to the Cretaceous−Paleogene Mass Extinction"
+  authors: "Shin Ikegami, Kanta Sugiura, Mehmet Oguz Derin, Yusuke Takeda, Jörg Mutterlose, Shintaro Sasaki, Neil H. Landman, Takahiro Harada, Kazuki Tainaka, Aya Kubota, Harufumi Nishida, Yasuhiro Iba"
+  venue: "Geology"
+  year: 2026
+  links:
+    - {label: "Geology", url: "https://doi.org/10.1130/G54372.1"}
+
+- title: "Earliest Octopuses Were Giant Top Predators in Cretaceous Oceans"
+  authors: "Shin Ikegami, Jörg Mutterlose, Kanta Sugiura, Yusuke Takeda, Mehmet Oguz Derin, Aya Kubota, Kazuki Tainaka, Takahiro Harada, Harufumi Nishida, Yasuhiro Iba"
+  venue: "Science, Vol. 392, 406-410"
+  year: 2026
+  links:
+    - {label: "science.org", url: "https://www.science.org/doi/10.1126/science.aea6285"}
+    - {label: "National Geographic", url: "https://www.nationalgeographic.com/science/article/cretaceous-kraken-giant-octopus"}
+    - {label: "Nature", url: "https://www.nature.com/articles/d41586-026-01342-w"}
+
+- title: "PEPS: Positional Encoding Projected Sampling"
+  authors: "Guillaume Perez, Janarbek Matai, Takahiro Harada"
+  venue: "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2604.24167"
+  acm: "https://dl.acm.org/doi/10.1145/3806062"
+  links:
+    - {label: "Slide", url: "https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/202605_PEPS_i3d.pdf"}
+
+- title: "Voxel Deformation-Aware Neural Intersection Function"
+  authors: "Chih-Chen Kao, Grzegorz Makowski, Shin Fujieda, Takahiro Harada"
+  venue: "Eurographics Short Paper"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2604.24666"
+  links:
+    - {label: "EG"}
+
+- title: "Ray Tracing in HIP"
+  authors: "Atsushi Yoshimura, Kenta Eto, Daniel Meister, Takahiro Harada"
+  venue: "AMD Technical Report"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2603.00292"
+
+- title: "The oldest sepioid cephalopod from the Cretaceous discovered by Digital fossil-mining with zero-shot learning AI"
+  authors: "Kanta Sugiura, Shin Ikegami, Yusuke Takeda, Jörg Mutterlose, Mehmet Oguz Derin, Aya Kubota, Harufumi Nishida, Kazuki Tainaka, Takahiro Harada, Neil H. Landman, Yasuhiro Iba"
+  venue: "Communications Biology"
+  year: 2026
+  links:
+    - {label: "nature.com", url: "https://doi.org/10.1038/s42003-026-09519-9"}
+
+- title: "Fast First-Hit Determination for Large and Composite Sparse Volumetric Data Structures with Mesh Shaders"
+  authors: "Mehmet Oguz Derin, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2025 Posters"
+  year: 2025
+  acm: "https://dl.acm.org/doi/10.1145/3757374.3771422"
+
+- title: "Geometric Integration for Neural Control Variates"
+  authors: "Daniel Meister, Takahiro Harada"
+  venue: "Pacific Graphics"
+  year: 2025
+  image: ncv.jpg
+  arxiv: "https://arxiv.org/abs/2509.15538"
+  links:
+    - {label: "EG", url: "https://diglib.eg.org/items/f488d50a-88a3-46de-8b74-22b790583a28"}
+
+- title: "LSNIF: Locally-Subdivided Neural Intersection Function"
+  authors: "Shin Fujieda, Chih-Chen Kao, Takahiro Harada"
+  venue: "Proceedings of the ACM on Computer Graphics and Interactive Techniques, Volume 8, Issue 1, Article No. 17, Pages 1-18"
+  year: 2025
+  image: lsnif.jpg
+  page: "/LSNIF/"
+  pdf: "https://arxiv.org/abs/2504.21627"
+  acm: "https://dl.acm.org/doi/10.1145/3728295"
+  links:
+    - {label: "Slide", url: "https://www.slideshare.net/slideshow/lsnif-locally-subdivided-neural-intersection-function/280097631"}
+    - {label: "Video", url: "https://www.youtube.com/watch?v=mdnwIKu1llo"}
+
+- title: "Nature Visible Only Digitally"
+  authors: "Yasuhiro Iba, Aya Kubota, Yusuke Takeda, Mehmet Oguz Derin, Shin Ikegami, Jörg Mutterlose, Takahiro Harada, Tomonori Takeuchi, Kazuki Tainaka"
+  venue: "Patterns, Volume 6, Issue 4, 101210"
+  year: 2025
+  image: nvod.jpg
+  links:
+    - {label: "HTML", url: "https://www.cell.com/patterns/fulltext/S2666-3899(25)00058-3"}
+
+- title: "Hierarchical Light Sampling with Accurate Spherical Gaussian Lighting"
+  authors: "Yusuke Tokuyoshi, Sho Ikeda, Paritosh Kulkarni, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2024 Conference Papers"
+  year: 2024
+  image: asgl.jpg
+  pdf: "https://gpuopen.com/download/publications/Hierarchical_Light_Sampling_with_Accurate_Spherical_Gaussian_Lighting.pdf"
+  acm: "https://dl.acm.org/doi/10.1145/3680528.3687647"
+  links:
+    - {label: "Code", url: "https://github.com/yusuketokuyoshi/VSGL"}
+
+- title: "Gradient Traversal: Accelerating Real-Time Rendering of Unstructured Volumetric Data"
+  authors: "Mehmet Oguz Derin, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2024 Posters"
+  year: 2024
+  acm: "https://dl.acm.org/doi/10.1145/3681756.3697979"
+
+- title: "HIPRT: A Ray Tracing Framework in HIP"
+  authors: "Daniel Meister, Paritosh Kulkarni, Aaryaman Vasishta, Takahiro Harada"
+  venue: "High Performance Graphics"
+  year: 2024
+  image: hiprt_pbrt.jpg
+  page: "/hiprt/"
+
+- title: "Neural Texture Block Compression"
+  authors: "Shin Fujieda, Takahiro Harada"
+  venue: "MAM-MANER EGSR"
+  year: 2024
+  page: "/ntbc/"
+  arxiv: "https://arxiv.org/abs/2407.09543v1"
+  links:
+    - {label: "EG", url: "https://diglib.eg.org/items/c6e1f8c5-1530-47e5-a2bc-1adc3c57c39b"}
+
+- title: "Real-time Rendering of Glossy Reflections using Ray Tracing and Two-level Radiance Caching"
+  authors: "Kenta Eto, Sylvain Meunier, Takahiro Harada, Guillaume Boissé"
+  venue: "ACM SIGGRAPH ASIA Technical Communications"
+  year: 2023
+  image: rrgr.jpg
+  acm: "https://dl.acm.org/doi/10.1145/3610543.3626167"
+
+- title: "Local Positional Encoding for Multi-Layer Perceptrons"
+  authors: "Shin Fujieda, Atsushi Yoshimura, Takahiro Harada"
+  venue: "Pacific Graphics Short Papers and Posters"
+  year: 2023
+  image: lpe.jpg
+  page: "/lpe/"
+  arxiv: "https://arxiv.org/abs/2309.15101"
+  links:
+    - {label: "EG", url: "https://diglib.eg.org/handle/10.2312/pg20231273"}
+
+- title: "Neural Intersection Function"
+  authors: "Shin Fujieda, Chih-Chen Kao, Takahiro Harada"
+  venue: "High-Performance Graphics - Symposium Papers, 43-53"
+  year: 2023
+  image: nif.jpg
+  page: "/nif/"
+  arxiv: "https://arxiv.org/abs/2306.07191"
+  links:
+    - {label: "EG", url: "https://diglib.eg.org/handle/10.2312/hpg20231135"}
+    - {label: "Video", url: "https://www.youtube.com/live/fFvyG_dLfmA?si=ySU85jyIrqr6qrqo&t=10470"}
+
+- title: "Subspace Culling for Ray-Box Intersection"
+  authors: "Atsushi Yoshimura, Takahiro Harada"
+  venue: "Proceedings of the ACM on Computer Graphics and Interactive Techniques, Vol. 6, No. 1"
+  year: 2023
+  image: subspaceculling.jpg
+  arxiv: "https://arxiv.org/abs/2305.08343"
+  acm: "https://dl.acm.org/doi/10.1145/3585503"
+  links:
+    - {label: "Video", url: "https://youtu.be/jurhq5ZnsBk?t=23&si=rUGboshUU9lUV9rF"}
+
+- title: "Weighted À-Trous Linear Regression (WALR) for Real-Time Diffuse Indirect Lighting Denoising"
+  authors: "Sylvain Meunier, Takahiro Harada"
+  venue: "AMD Technical Report No. 22-12-1c2e, December 15"
+  year: 2022
+  image: walr.jpg
+
+- title: "Geometry and Texture Streaming Architecture in Radeon ProRender"
+  authors: "Atsushi Yoshimura, Sho Ikeda, Takahiro Harada"
+  venue: "AMD Technical Report No. 22-10-daf5, October 13"
+  year: 2022
+  image: ooc.jpg
+
+- title: "Progressive Material Caching"
+  authors: "Shin Fujieda, Takahiro Harada"
+  venue: "ACM SIGGRAPH ASIA Technical Communications"
+  year: 2022
+  image: pmc.jpg
+  pdf: "https://gpuopen.com/download/publications/SA2022_ProgressiveMaterialCache.pdf"
+
+- title: "Combining GPU Tracing Methods within a Single Ray Query"
+  authors: "Pieterjan Bartels, Takahiro Harada"
+  venue: "ACM SIGGRAPH ASIA Technical Communications"
+  year: 2022
+  image: cgt.jpg
+  pdf: "https://gpuopen.com/download/publications/SA2022_DistanceFieldRT.pdf"
+
+- title: "Fused BVH to Ray Trace Level of Detail Meshes"
+  authors: "Paritosh Kulkarni, Sho Ikeda, Takahiro Harada"
+  venue: "ACM SIGGRAPH ASIA Posters"
+  year: 2022
+  image: fusedbvh.jpg
+  links:
+    - {label: "AMD Technical Report, No. 22-10-b79d", url: "https://gpuopen.com/download/publications/GPUOpen2022_FusedLOD.pdf"}
+
+- title: "GI-1.0: A Fast and Scalable Two-level Radiance Caching Scheme for Real-time Global Illumination"
+  authors: "Guillaume Boissé, Sylvain Meunier, Heloise de Dinechin, Pieterjan Bartels, Alexander Veselov, Kenta Eto, Takahiro Harada"
+  venue: "AMD Technical Report, No. 22-10-9831, October 18"
+  year: 2022
+  image: gi1.jpg
+  page: "/gi-1.0/"
+  pdf: "https://gpuopen.com/download/publications/GPUOpen2022_GI1_0.pdf"
+
+- title: "Compression and Interactive Visualization of Terabyte Scale Volumetric RGBA Data with Voxel-scale Details"
+  authors: "Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba"
+  venue: "SIGGRAPH 2022 Posters"
+  year: 2022
+
+- title: "Stochastic Light Culling for Single Scattering in Participating Media"
+  authors: "Shin Fujieda, Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "Eurographics 2022 Short Papers"
+  year: 2022
+  image: slc.jpg
+  page: "/vslc/"
+  pdf: "https://gpuopen.com/download/publications/EG22_VolumeSlc.pdf"
+
+- title: "Multi-Fragment Rendering for Glossy Bounces on the GPU"
+  authors: "Atsushi Yoshimura, Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "EGSR 2022 Industry Track"
+  year: 2022
+  image: mfr.jpg
+
+- title: "Multi-Resolution Geometric Representation using Bounding Volume Hierarchy for Ray Tracing"
+  authors: "Sho Ikeda, Paritosh Kulkarni, Takahiro Harada"
+  venue: "AMD Technical Report, No. 22-02-f322"
+  year: 2022
+  image: mrgr.jpg
+  page: "/Multi-Resolution%20Geometric%20Representation%20using%20Bounding%20Volume%20Hierarchy%20for%20Ray%20Tracing/"
+  pdf: "https://gpuopen.com/download/publications/GPUOpen_BVHApproximation.pdf"
+
+- title: "Sparse Volume Rendering using Hardware Ray Tracing and Block Walking"
+  authors: "Mehmet Oguz Derin, Takahiro Harada, Yusuke Takeda, Yasuhiro Iba"
+  venue: "SIGGRAPH Asia 2021 Technical Communications, Article No. 19, Pages 1-4"
+  year: 2021
+  image: svr.jpg
+  pdf: "https://gpuopen.com/download/publications/SA2021_BlockWalk.pdf"
+  acm: "https://dl.acm.org/doi/abs/10.1145/3478512.3488608"
+
+- title: "フレッシュマンに向けたプログラミングのススメ：9．これから世界を視野に入れて働くエンジニアへ"
+  authors: "原田隆宏"
+  venue: "会誌「情報処理」, Vol.60, No.6"
+  year: 2019
+  links:
+    - {label: "LINK", url: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=195582&item_no=1&page_id=13&block_id=8"}
+
+- title: "Hierarchical Russian Roulette for Vertex Connections"
+  authors: "Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "ACM Transactions on Graphics 38, 4, 36"
+  year: 2019
+
+- title: "Bidirectional Path Tracing Using Backward Stochastic Light Culling"
+  authors: "Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "ACM SIGGRAPH 2018 Talks"
+  year: 2018
+
+- title: "Energy-efficient Global Illumination Algorithms for Mobile Devices using Dynamic Voltage and Frequency Scaling"
+  authors: "Young J. Kim, SeongKi Kim, Takahiro Harada"
+  venue: "Computers & Graphics Vol. 70, 198-205"
+  year: 2018
+  links:
+    - {label: "Link"}
+
+- title: "Stochastic Light Culling for VPLs on GGX Microsurfaces"
+  authors: "Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "Computer Graphics Forum 36, 4 (EGSR 2017)"
+  year: 2017
+
+# TODO: authors and venue were missing from the original index.md — please fill in.
+- title: "A Framework to Transform In-Core GPU Algorithms to Out-of-Core Algorithms"
+  year: 2016
+  links:
+    - {label: "Abstract", url: "https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2016_i3d.pdf"}
+    - {label: "Sup", url: "https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2016_i3d_sup.pdf"}
+
+- title: "Stochastic Light Culling"
+  authors: "Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "The Journal of Computer Graphics Techniques"
+  year: 2016
+  image: 2016_slc.jpg
+  page: "/Stochastic%20Light%20Culling/"
+  pdf: "https://jcgt.org/published/0005/01/02/paper-lowres.pdf"
+  links:
+    - {label: "Web", url: "https://jcgt.org/published/0005/01/02/"}
+
+- title: "Ray Tracing Irregularly Distributed Samples on Multiple GPUs"
+  authors: "Takahiro Harada, Masahiro Fujita"
+  venue: "High Performance Graphics Poster"
+  year: 2014
+  links:
+    - {label: "Project"}
+    - {label: "Abstract", url: "https://github.com/takahiroharada/takahiroharada.github.io/raw/master/publications/2014_hpg.pdf"}
+
+- title: "Micro-buffer Rasterization Reduction Method for Environment Lighting Using Point-based Rendering"
+  authors: "Takahiro Harada"
+  venue: "Graphics Interface"
+  year: 2014
+  links:
+    - {label: "Paper"}
+
+- title: "Tridiagonal Matrix Formulation for Inextensible Hair Strand Simulation"
+  authors: "Dongsoo Han, Takahiro Harada"
+  venue: "VRIPHYS, 11-16"
+  year: 2013
+  links:
+    - {label: "Paper"}
+
+- title: "A 2.5D Culling for Forward+"
+  authors: "Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2012 Technical Brief, No.18"
+  year: 2012
+  pdf: "https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/2012_sigAsia.pdf"
+  links:
+    - {label: "Slide"}
+
+- title: "Real-time Hair Simulation with Efficient Hair Style Preservation"
+  authors: "Dongsoo Han, Takahiro Harada"
+  venue: "VRIPHYS, 5-8"
+  year: 2012
+  links:
+    - {label: "EG"}
+    - {label: "Slide"}
+  note: "Simulation tech of TressFX"
+
+- title: "Forward+: Bringing Deferred Lighting to the Next Level"
+  authors: "Takahiro Harada, Jay McKee, Jason C. Yang"
+  venue: "Eurographics Short Paper, 5-8"
+  year: 2012
+  page: "/forward+/"
+  links:
+    - {label: "Paper", url: "/publications/forward_plus.pdf"}
+    # publications/2012EG_Forward+_slide.pdf looks like this slide deck — link it if so.
+    - {label: "Slide"}
+
+- title: "A Framework for Rendering Complex Scattering Effects on Hair"
+  authors: "Xuan Yu, Jason C. Yang, Justin Hensley, Takahiro Harada, Jingyi Yu"
+  venue: "Proceedings of ACM SIGGRAPH Symposium on Interactive 3D Graphics & Games, 111-118"
+  year: 2012
+  note: "Rendering tech of TressFX"
+
+- title: "Heterogeneous Particle-Based Simulation"
+  authors: "Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2011 Sketch, No.19"
+  year: 2011
+  pdf: "/publications/5_2011SiggraphAsia.pdf"
+  acm: "https://dl.acm.org/doi/10.1145/2077378.2077402"
+
+- title: "A Parallel Constraint Solver for a Rigid Body Simulation"
+  authors: "Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2011 Sketch, No.22"
+  year: 2011
+  acm: "https://dl.acm.org/doi/10.1145/2077378.2077406"
+  links:
+    - {label: "Paper", url: "https://github.com/takahiroharada/takahiroharada.github.io/blob/master/publications/2011_A%20Parallel%20Constraint%20Solver%20for%20a%20Rigid%20Body%20Simulation.pdf"}
+
+- title: "Real-time Collision Culling of a Million Bodies on Graphics Processing Units"
+  authors: "Fuchang Liu, Takahiro Harada, Youngeun Lee, Young J. Kim"
+  venue: "ACM Transactions on Graphics, SIGGRAPH ASIA"
+  year: 2010
+  pdf: "http://graphics.ewha.ac.kr/gSaP/gSaP.pdf"
+  acm: "https://dl.acm.org/doi/10.1145/1882261.1866180"
+
+- title: "Fast Rendering of Particle-Based Fluid by Utilizing Simulation Data"
+  authors: "Ren Yasuda, Takahiro Harada, Yoichiro Kawaguchi"
+  venue: "Eurographics Short Paper"
+  year: 2009
+  links:
+    - {label: "EG"}
+
+- title: "Massive Particles: Particle-based Simulations on Multiple GPUs"
+  authors: "Takahiro Harada, Issei Masaie, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "SIGGRAPH 2008 Talk"
+  year: 2008
+
+- title: "Real-Time Simulation of Granular Materials using Graphics Hardware"
+  authors: "Ren Yasuda, Takahiro Harada, Yoichiro Kawaguchi"
+  venue: "International Conference on Computer Graphics, Imaging and Visualisation, 28-31"
+  year: 2008
+
+- title: "Multi-physics Simulation for Micro Fluidic Devices Using Moving Particle Semi-Implicit Method"
+  authors: "Seiichi Koshizuka, Yukihito Suzuki, Takahiro Harada"
+  venue: "Proc. of WCCM8/ECOMAS2008"
+  year: 2008
+
+- title: "A Wall Boundary Computation Model by Polygons for Moving Particle Semi-Implicit Method"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Katsunori Shimazaki"
+  venue: "Proc. of WCCM8/ECOMAS2008"
+  year: 2008
+  note: "to Appear"
+
+- title: "Slided Data Structure for Particle-based Simulations on GPUs"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Proc. of GRAPHITE, 55-62"
+  year: 2007
+
+- title: "Real-time Coupling of Fluids and Rigid Bodies"
+  authors: "Takahiro Harada, Masayuki Tanaka, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Asian-Pacific Congress on Computational Mechanics"
+  year: 2007
+  note: "The Best Computer Visualization Award"
+
+- title: "Construction of Non-Blobby Surface from Particles"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Eurographics Short Paper, 41-44"
+  year: 2007
+  links:
+    - {label: "EG", url: "https://diglib.eg.org:8443/server/api/core/bitstreams/70b38c5c-de0e-4568-a5da-bb1d9fc2e824/content"}
+  note: "The Best Poster Prize"
+
+- title: "Real-time Particle-based Simulation on GPUs"
+  authors: "Takahiro Harada, Masayuki Tanaka, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "SIGGRAPH 2007 Poster"
+  year: 2007
+
+- title: "Elastic Objects for Computer Graphic Field using MPS method"
+  authors: "Masahiro Kondo, Masayuki Tanaka, Takahiro Harada, Seiichi Koshizuka"
+  venue: "SIGGRAPH 2007 Poster"
+  year: 2007
+
+- title: "Real-time Rendering of Dynamic Clouds"
+  authors: "Yuki Shimada, Mikio Shinya, Michio Shiraishi, Takahiro Harada"
+  venue: "SIGGRAPH 2007 Poster"
+  year: 2007
+
+- title: "Real-time Fluid Simulation Coupled with Cloth"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Proc. of Theory and Practice of Computer Graphics, 13-20"
+  year: 2007
+  links:
+    - {label: "EG"}
+  note: "Ken Brodlie Prize for Best Paper, Third Place"
+
+- title: "Smoothed Particle Hydrodynamics on GPUs"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Proc. of Computer Graphics International, 63-70"
+  year: 2007
+
+- title: "Acceleration of Rigid Body Simulation using Graphics Hardware"
+  authors: "Takahiro Harada, Masayuki Tanaka, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Symposium on Interactive 3D Graphics and Games"
+  year: 2007
+
+- title: "Smoothed Particle Hydrodynamics in Complex Shapes"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Spring Conference on Computer Graphics, 235-241"
+  year: 2007
+  note: "1st The Best Paper Award"
+
+- title: "Acceleration of Smoothed Particle Hydrodynamics using Graphics Hardware"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "International Conference on Computational Methods"
+  year: 2007
+
+- title: "Improvement of the Boundary Conditions in Smoothed Particle Hydrodynamics"
+  authors: "Takahiro Harada, Seiichi Koshizuka, Yoichiro Kawaguchi"
+  venue: "Computer Graphics & Geometry, Vol. 9, No. 3, 2-15"
+  year: 2007
+  links:
+    - {label: "LINK"}
+
+- title: "Meshless Simulation for Micro Droplet Generation"
+  authors: "Takahiro Harada, Yukihito Suzuki, Seiichi Koshizuka, Takahiro Arakawa, Shuichi Shoji"
+  venue: "Proc. of Micro Total Analysis Systems, Vol.1, 86-89"
+  year: 2006
+
+- title: "Simulation of Droplet Generation in Micro Flow using MPS Method"
+  authors: "Takahiro Harada, Yukihito Suzuki, Seiichi Koshizuka, Takahiro Arakawa, Shuichi Shoji"
+  venue: "Japan Society of Mechanical Engineering International Journal Series B, Vol.49, No.3, 731-736"
+  year: 2006
+  links:
+    - {label: "INDEX"}
+
+- title: "Real-time Cloth Simulation Interacting with Deforming High-Resolution Models"
+  authors: "Takahiro Harada, Seiichi Koshizuka"
+  venue: "SIGGRAPH 2006 Poster, 129"
+  year: 2006
+  note: "ACM Student Research Competition Finalist"
+
+- title: "Numerical Analysis of Micro Multi-phase Flow using MPS Method"
+  authors: "Takahiro Harada, Yukihito Suzuki, Seiichi Koshizuka, Takahiro Arakawa, Shuichi Shoji"
+  venue: "Proc. of 7th World Congress on Computational Mechanics, 1223"
+  year: 2006
+
+- title: "Numerical Analysis of Micro Droplet Generation using a Particle Method"
+  authors: "Takahiro Harada, Yukihito Suzuki, Seiichi Koshizuka, Takahiro Arakawa, Shuichi Shoji"
+  venue: "Proc. of Micro Total Analysis Systems, Vol.1, 638-640"
+  year: 2005

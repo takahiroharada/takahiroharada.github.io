@@ -1,5 +1,25 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+.sass-cache/
+
+# Bundler
+/.bundle/
+vendor/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets — this repo currently tracks id_rsa.pub; never add a private key.
+id_rsa
+*.pem
+.env

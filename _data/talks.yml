@@ -1,0 +1,174 @@
+# Conference talks. Same schema as publications.yml.
+#
+# Required : title, authors, venue, year
+# Optional : pdf / arxiv / acm  - the three most common links, as plain URLs
+#            image  - filename inside /imgs/ (defaults to icon.jpg)
+#            page   - internal project page; makes the title a link
+#            links  - anything that isn't pdf/arxiv/acm, as {label, url};
+#                     omit `url` to show the label as plain, unlinked text
+#            note   - award / trailing remark shown after the links
+#
+# - title: "An Example Paper"
+#   authors: "A. Author, B. Author"
+#   venue: "Some Conference"
+#   year: 2026
+#   pdf: "https://example.com/paper.pdf"
+#   arxiv: "https://arxiv.org/abs/0000.00000"
+#   acm: "https://dl.acm.org/doi/10.1145/0000000"
+#   links:
+#     - {label: "Code", url: "https://github.com/example"}
+#   note: "Best Paper Award"
+
+- title: "HIP RT: A Ray Tracing Library in HIP"
+  authors: "Takahiro Harada"
+  venue: "High Performance Graphics 2022 Hot3D"
+  year: 2022
+
+- title: "Real-Time Ray-Tracing Techniques for Integration into Existing Renderers"
+  authors: "Takahiro Harada"
+  venue: "GDC"
+  year: 2018
+
+- title: "Radeon ProRender and Radeon Rays in a Gaming Rendering Workflow"
+  authors: "Takahiro Harada"
+  venue: "GDC"
+  year: 2017
+
+- title: "Stochastic Light Culling"
+  authors: "Yusuke Tokuyoshi, Takahiro Harada"
+  venue: "I3D"
+  year: 2017
+  links:
+    - {label: "Slide + Code"}
+
+- title: "The Quest for The Ray Tracing API"
+  authors: "A. Keller, I. Wald, T. Harada, D. Kozlov, R. Karrenberg, L. Peterson, T. Hector"
+  venue: "SIGGRAPH Course"
+  year: 2016
+  links:
+    - {label: "Project"}
+
+- title: "Multiplatform GPU Ray-Tracing Solutions With FireRender and FireRays"
+  authors: "Takahiro Harada, Dmitry Kozlov"
+  venue: "GDC"
+  year: 2016
+
+- title: "Foveated Ray Tracing for VR on Multiple GPUs"
+  authors: "Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2014 Course"
+  year: 2014
+
+- title: "モンテカルロレイトレーシングの基礎からOpenCLによる実装まで"
+  authors: "Takahiro Harada"
+  venue: "CEDEC"
+  year: 2013
+  links:
+    - {label: "Slide"}
+
+- title: "Real-time Hair Simulation and Rendering for Games（ゲームのためのリアルタイムヘアーシミュレーションとレンダリング）"
+  authors: "Dongsoo Han, Takahiro Harada"
+  venue: "CEDEC"
+  year: 2013
+  links:
+    - {label: "Slide"}
+
+- title: "西川善司の「CEDEC 2013」ゲーム開発マニアックス（グラフィックス編）"
+  venue: "CEDEC"
+  year: 2013
+
+- title: "The AMD Leo Demo Deep Dive"
+  authors: "Takahiro Harada, Jay McKee"
+  venue: "CEDEC"
+  year: 2012
+  links:
+    - {label: "Slide"}
+
+- title: "PTex and Vector Displacement in AMD Demos"
+  venue: "CEDEC"
+  year: 2012
+
+- title: "Forward Rendering Pipeline for Modern GPUs"
+  authors: "Jay McKee, Takahiro Harada"
+  venue: "GDC Europe"
+  year: 2012
+
+- title: "GPU Accelerated Rigid Body and Soft Body Game Physics"
+  authors: "Erwin Coumans, Takahiro Harada"
+  venue: "AMD Fusion Developer Summit"
+  year: 2012
+  links:
+    - {label: "Slide"}
+
+- title: "Recent Advances in Real-Time Collision and Proximity Computations for Games and Simulations"
+  authors: "S. Frye, T. Harada, Y. J. Kim, S.-e. Yoon"
+  venue: "Eurographics"
+  year: 2012
+
+- title: "Physics for Game Programmers"
+  authors: "Takahiro Harada"
+  venue: "Game Developers Conference"
+  year: 2012
+
+- title: "OpenCL by Example"
+  authors: "Justin Hensley, Derek Gerstmann, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2011 Course"
+  year: 2011
+
+- title: "Game Programming on Hybrid CPU-GPU Architectures"
+  authors: "Takahiro Harada, Erwin Coumans"
+  venue: "Destruction for Games, CEDEC"
+  year: 2011
+
+- title: "Physics Panel Discussion"
+  authors: "Takahiro Harada"
+  venue: "CEDEC"
+  year: 2011
+
+- title: "Destruction and Dynamics for Film and Game Production"
+  authors: "Takahiro Harada"
+  venue: "SIGGRAPH Course"
+  year: 2011
+  links:
+    - {label: "Slide"}
+
+- title: "Physics Simulation on Fusion Architecture"
+  authors: "Takahiro Harada"
+  venue: "AMD Fusion Developer Summit"
+  year: 2011
+  links:
+    - {label: "Slide"}
+
+- title: "Designing Physics Algorithms for GPU Architecture"
+  authors: "Takahiro Harada"
+  venue: "Physics for Game Programmers, Game Developers Conference"
+  year: 2011
+
+- title: "DX11 Techniques in HK2207"
+  authors: "Takahiro Harada"
+  venue: "AMD's Favorite Techniques, Game Developers Conference"
+  year: 2011
+
+- title: "OpenCL by Example"
+  authors: "Justin Hensley, Derek Gerstmann, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2010 Course"
+  year: 2010
+
+- title: "Physics Panel Discussion"
+  authors: "Takahiro Harada"
+  venue: "CEDEC"
+  year: 2010
+
+- title: "Recent Advances in Real-Time Collision and Proximity Computations for Games and Simulations"
+  authors: "Sung-Eui Yoon, Takahiro Harada, Young J. Kim"
+  venue: "SIGGRAPH ASIA 2010 Course"
+  year: 2010
+
+- title: "Physics Simulations on the GPU"
+  authors: "Takahiro Harada"
+  venue: "Physics for Programmers, Game Developers Conference"
+  year: 2010
+
+- title: "Parallelizing the Physics Pipeline: Physics Simulations on the GPU"
+  authors: "Takahiro Harada"
+  venue: "Math for Programmers / Physics for Programmers (Tutorial), Game Developers Conference"
+  year: 2009

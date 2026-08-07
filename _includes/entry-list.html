@@ -1,0 +1,35 @@
+{%- comment -%}
+Renders a list of publication/talk entries grouped by year, newest first.
+
+Usage: {% include entry-list.html entries=site.data.publications %}
+
+Entry fields: title, authors, venue, year, image, page,
+              pdf / arxiv / acm (plain URLs), links[{label,url}], note.
+URLs are emitted verbatim (site baseurl is empty), so both "/imgs/x.jpg" and
+"https://..." work as written in the YAML.
+{%- endcomment -%}
+{%- assign groups = include.entries | group_by: "year" | sort: "name" | reverse -%}
+{%- for group in groups -%}
+<h3 class="pub-year">{{ group.name }}</h3>
+<ul class="pub-list">
+{%- for pub in group.items %}
+<li class="pub">
+<img class="pub-thumb" src="/imgs/{{ pub.image | default: 'icon.jpg' }}" alt="" loading="lazy">
+<div class="pub-title">{% if pub.page %}<a href="{{ pub.page }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
+{%- if pub.authors %}
+<div class="pub-authors">{{ pub.authors }}</div>
+{%- endif %}
+<div class="pub-meta">
+{%- if pub.venue %}<span class="pub-venue">{{ pub.venue }}</span>{% endif -%}
+{%- if pub.pdf %}<a href="{{ pub.pdf }}">PDF</a>{% endif -%}
+{%- if pub.arxiv %}<a href="{{ pub.arxiv }}">Arxiv</a>{% endif -%}
+{%- if pub.acm %}<a href="{{ pub.acm }}">ACM</a>{% endif -%}
+{%- for link in pub.links -%}
+{%- if link.url %}<a href="{{ link.url }}">{{ link.label }}</a>{% else %}<span class="pub-link-dead">{{ link.label }}</span>{% endif -%}
+{%- endfor -%}
+{%- if pub.note %}<span class="pub-note">{{ pub.note }}</span>{% endif -%}
+</div>
+</li>
+{%- endfor %}
+</ul>
+{%- endfor -%}
