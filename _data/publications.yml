@@ -19,6 +19,12 @@
 #     - {label: "Code", url: "https://github.com/example"}
 #   note: "Best Paper Award"
 
+- title: "BVH Encoding for AI-Assisted Ray Tracing"
+  authors: "Daniel Meister Takahiro Harada"
+  venue: "Journal of Computer Graphics Techniques"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2604.24666"
+
 - title: "Squids Radiated Globally Prior to the Cretaceous−Paleogene Mass Extinction"
   authors: "Shin Ikegami, Kanta Sugiura, Mehmet Oguz Derin, Yusuke Takeda, Jörg Mutterlose, Shintaro Sasaki, Neil H. Landman, Takahiro Harada, Kazuki Tainaka, Aya Kubota, Harufumi Nishida, Yasuhiro Iba"
   venue: "Geology"
