@@ -4,6 +4,13 @@ title: Etc
 permalink: /etc/
 ---
 
+## Tools
+- [Online Minimum Markdown Editor](https://takahiroharada.github.io/tools/miniMd.html)
+- [縦書きMarkdown Reader](https://takahiroharada.github.io/tools/markdownReader.html)
+
+
+## Books
+
 |---|---|--|
 | <img width="128" src="../imgs/icon.jpg"/> | [Essentialism: The Disciplined Pursuit of Less](https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0753555166) | [エッセンシャル思考 最少の時間で成果を最大にする](https://books.google.com/books/about/%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E6%80%9D%E8%80%83.html?id=XlDMrQEACAAJ) |
 | <img width="128" src="../imgs/icon.jpg"/> | [Four Thousand Weeks: Time Management for Mortals](https://www.amazon.com/Four-Thousand-Weeks-Management-Mortals/dp/0374159122) | [限りある時間の使い方 人生は「4000週間」あなたはどう使うか？](https://www.google.com/books/edition/%E9%99%90%E3%82%8A%E3%81%82%E3%82%8B%E6%99%82%E9%96%93%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/cgx0EAAAQBAJ?hl=ja) |
