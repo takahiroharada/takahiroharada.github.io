@@ -7,6 +7,7 @@ permalink: /etc/
 ## Tools
 - [Online Minimum Markdown Editor](https://takahiroharada.github.io/tools/miniMd.html)
 - [縦書きMarkdown Reader](https://takahiroharada.github.io/tools/markdownReader.html)
+- [EPUBコンバーター](https://takahiroharada.github.io/tools/text2epub.html)
 
 
 ## Books
