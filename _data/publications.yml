@@ -19,8 +19,18 @@
 #     - {label: "Code", url: "https://github.com/example"}
 #   note: "Best Paper Award"
 
+- title: "Explicit LOD-Conditioned Anisotropic Filtering for Neural Texture Compression"
+  authors: "Shin Fujieda, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2026 Technical Communications"
+  year: 2026
+
+- title: "Same Mesh, Fewer Queries: Certified Query-Adaptive Sampling for Fixed-Grid Dual Contouring"
+  authors: "Mehmet Oguz Derin, Takahiro Harada"
+  venue: "SIGGRAPH ASIA 2026 Poster"
+  year: 2026
+
 - title: "BVH Encoding for AI-Assisted Ray Tracing"
-  authors: "Daniel Meister Takahiro Harada"
+  authors: "Daniel Meister, Takahiro Harada"
   venue: "Journal of Computer Graphics Techniques"
   year: 2026
   arxiv: "https://arxiv.org/abs/2604.24666"
