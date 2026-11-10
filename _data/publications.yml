@@ -23,7 +23,14 @@
   authors: "Shin Fujieda, Takahiro Harada"
   venue: "SIGGRAPH ASIA 2026 Technical Communications"
   year: 2026
-
+  arxiv: "https://arxiv.org/abs/2611.12650"
+  
+- title: "Patch-Based Generalized Neural Texture Upscaling"
+  authors: "Shin Fujieda, Takahiro Harada"
+  venue: "Published on ARXIV"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2611.07289"
+  
 - title: "Same Mesh, Fewer Queries: Certified Query-Adaptive Sampling for Fixed-Grid Dual Contouring"
   authors: "Mehmet Oguz Derin, Takahiro Harada"
   venue: "SIGGRAPH ASIA 2026 Poster"
